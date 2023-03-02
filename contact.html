@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Project - Prototype - Third Page - Contact Us</title>
+</head>
+<body>
+    <!-- Add skip link for accessibility -->
+    <ul class="access-skip-links">
+        <li><a aria-label="Skip to navigation" href="#nav">Skip to the navigation</a></li>
+        <li><a aria-label="Skip to main guess ordering" href="#main">Skip to the main content</a></li>
+    </ul>
+    <!-- Website header and front page above the fold -->
+    <header class="site-header" role="banner">
+        <!-- Website navigation bar -->
+        <nav class="navbar" id="nav" role="navigation">
+            <ul>
+                <li><a role="button" aria-label="Home Page" href="/index.html" target="_self">Home</a></li>
+                <li><a role="button" aria-label="Menu Page" href="/menu.html" target="_self">Menu</a></li>
+                <li><a role="button" aria-label="About Us Page" href="/contact.html" target="_self">About Us</a></li>
+                <li><a role="button" aria-label="Contact Us Page" href="/contact.html" target="_self">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- company logo -->
+        <div>
+            <img src="" alt="">
+        </div>
+        <div class="order-container">
+            <!-- place bit mark background image here -->
+            <img src="" alt="">
+            <!-- quick login and place order button -->
+            <button type="button" aria-label="Login and order" href="#">Login/Order</button>
+        </div>
+    </header>
+    <!-- fold -->
+
+    <section class="owner" role="region">
+        <!-- Add Schema improving the way search engines read and represent your page -->
+        <h1>Meet the owner</h1>
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
+        </ul>
+        <h1>Address</h1>
+        <p itemscope="address" itemtype="https://schema.org/PostalAddress">
+          <span>Jambox Studios</span>
+          <span itemprop="streetAddress">123 Guitar Road,</span>
+          <span itemprop="addressLocality">Musicville,</span> <span itemprop="addressCountry">Danceistan</span>
+          <span intemprop="postalCode">B3T 0L0</span>
+        </p>
+    </section>
+
+    <section class="contact-section" role="form">
+        <h1>Contact Us</h1>
+        <!-- Add label for an input filed helping accessibility ie.: hit area  -->
+        <form action="thanks.html">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Full Name">
+          <label for="mail">Email</label>
+          <input type="email" id="mail" name="mail" placeholder="Email">
+          <label for="subject">Your Subject Title</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject">
+          <b>Your Message</b>
+          <textarea></textarea>
+          <button type="submit" role="button">Send</button>
+        </form>
+      </section>
+</body>
+</html>
