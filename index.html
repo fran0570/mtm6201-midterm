@@ -8,15 +8,21 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- The aria-label: attribute is intended for interactive elements only. -->
+    <!-- aria-label: should be short and concise while aria-details ... -->
+    <!-- aria-details: not intended interactive elements that you want/need more details attached. The description can be longer then labels as 
+         it is intended to provide more context and information -->
+    <!-- roles: (defining a type of user interface element) and states and properties that are supported by a role -->
+
     <!-- Add skip link for accessibility -->
     <ul class="access-skip-links">
         <li><a aria-label="Skip to navigation" href="#nav">Skip to the navigation</a></li>
         <li><a aria-label="Skip to main guess ordering" href="#main">Skip to the main content</a></li>
     </ul>
     <!-- Website header and front page above the fold -->
-    <header class="site-header" role="banner">
+    <header class="site-header" aria-details="site banner">
         <!-- Website navigation bar -->
-        <nav class="navbar" id="nav" role="navigation">
+        <nav class="navbar" id="nav" role="navigation" aria-label="main site navigation">
             <ul>
                 <li><a role="button" aria-label="Home Page" href="/index.html" target="_self">Home</a></li>
                 <li><a role="button" aria-label="Menu Page" href="/menu.html" target="_self">Menu</a></li>
@@ -26,11 +32,11 @@
         </nav>
         <!-- company logo -->
         <div>
-            <img src="" alt="">
+            <img class="company-logo" src="images/tacos-logo.svg" alt="company grays tacos logo" aria-details="company logo">
         </div>
         <div class="order-container">
             <!-- place bite mark background image here or as css background? -->
-            <img src="" alt="">
+            <img src="" alt="" role="" aria-label="">
             <!-- quick login and place order button -->
             <button type="button" aria-label="Login and order" href="#">Login/Order</button>
         </div>
