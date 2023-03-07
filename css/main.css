@@ -4,6 +4,10 @@
 
 /* ************************************************************* */
 /*  NOTES
+    -Colors: orange = #ffba59, purple = #3d1c39, teal= #69c0af, and white
+    CHECK COLORS WITH WAVES!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
     -Mobile first styling approche with responsive design with media queries
     -CSS should be valid and well-formatted
     -Comments should be provided for explaining
@@ -15,19 +19,21 @@
 
 /* loading fonts */
 @font-face {
-    font-family: Athena Rustic; src: url('fonts/athena-rustic-font/Athena Rustic.ttf');
-    font-family: Bite _ Bullet; src: url('fonts/bite-the-bullet/Bite _ Bullet.ttf');
-    font-family: IndieFlower-Regular; src: url('IndieFlower-Regular.ttf');
-    font-family: Rustic Love Tattoo; src: url('fonts/rustic_love_tattoo/Rustic Love Tattoo.otf');
+    font-family: athena-rustic; src: url('fonts/athena-rustic-font/athena-rustic.ttf');
+    font-family: bite-bullet; src: url('fonts/bite-the-bullet/bite-bullet.ttf');
+    font-family: indie-flower-regular; src: url('fonts/indie-flower/indie-flower-regular.ttf');
+    font-family: rustic-love-tattoo; src: url('fonts/rustic-love-tattoo/rustic-love-tattoo.otf');
 }
 
 /* Main styling set inside the body for entire site 
    setting the initial width and margin */
    body {
     display: block;
-    font-family: 'Open Sans', sans-serif;
+    font-family: athena-rustic;
     margin: auto;
     max-width: 760px;
+    color: #3d1c39;
+    background-color: #ffba59;
 }
 
 /* ************************************************************* */
@@ -40,3 +46,24 @@
 /* .company-logo {
     font-family: Bite _ Bullet;
 } */
+
+
+/* ************************************************************* */
+/* Media Query 
+   No specific media queries and breakpoints are required but 
+   should be used as necessary */
+/* ************************************************************* */
+@media screen and (min-width: 760px) {
+
+    /* maximum width of the container is 1200px */
+    body {
+        max-width: 1200px;
+    }
+
+    /* ************************************************************* */
+    /* Naviation Re-styling 
+       Use flexbox layout for re-organizing horizontally the nav elements: 
+       logo, list, search bar and search button. Also flexbox on the 
+       about us element */
+    /* ************************************************************* */
+}
