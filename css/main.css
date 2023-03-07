@@ -1,9 +1,41 @@
- @font-face {
+/* ************************************************************* */
+/*  Midterm Project - Prototype - CSS */
+/* ************************************************************* */
+
+/* ************************************************************* */
+/*  NOTES
+    -Mobile first styling approche with responsive design with media queries
+    -CSS should be valid and well-formatted
+    -Comments should be provided for explaining
+    
+    The site must follow accessibility guidelines using proper contrast, 
+    alt text for images, skip links, aria roles, proper HTML syntax and schema information. 
+   */
+/* ************************************************************* */
+
+/* loading fonts */
+@font-face {
     font-family: Athena Rustic; src: url('fonts/athena-rustic-font/Athena Rustic.ttf');
     font-family: Bite _ Bullet; src: url('fonts/bite-the-bullet/Bite _ Bullet.ttf');
     font-family: IndieFlower-Regular; src: url('IndieFlower-Regular.ttf');
     font-family: Rustic Love Tattoo; src: url('fonts/rustic_love_tattoo/Rustic Love Tattoo.otf');
 }
+
+/* Main styling set inside the body for entire site 
+   setting the initial width and margin */
+   body {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    max-width: 760px;
+}
+
+/* ************************************************************* */
+/*  Navigation Bar Styling
+    Creating one column of buttons with colour change hover state */
+/* ************************************************************* */
+ 
+
 
 /* .company-logo {
     font-family: Bite _ Bullet;
