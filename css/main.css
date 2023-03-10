@@ -125,9 +125,20 @@ nav ul li:nth-child(4) {
     grid-row: 4 / 5;
 }
 
+.bite {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
 .order-container {
+    margin-bottom: 0px;
+    padding: 0px;
     background-color: var(--white-color);
     padding: 1rem 1rem 10rem;
+}
+
+.order-container button {
+    /* background-color: var(--white-color); */
 }
 
 .tuesday-deal {
