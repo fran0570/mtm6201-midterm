@@ -4,7 +4,7 @@
 
 /* ************************************************************* */
 /*  NOTES
-    -Colors: orange = #ffba59, purple = #3d1c39, teal= #69c0af, and white
+    -Colors: orange = #ffba59, purple = , teal= #69c0af, and white
     CHECK COLORS WITH WAVES!!!!!!!!!!!!!!!!!!
     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -17,36 +17,125 @@
    */
 /* ************************************************************* */
 
+
+:root {
+    /* costum property/variable */
+    /* colors */
+    --primary-color: #ffba59;
+    --secondary-color: #3d1c39;
+    --highlight-color:#69c0af;
+    --white-color: white;
+    /* spacing */
+    --paddings: 1rem;
+    --margins: 1rem;
+}
+
 /* loading fonts */
 @font-face {
-    font-family: athena-rustic; src: url('fonts/athena-rustic-font/athena-rustic.ttf');
-    font-family: bite-bullet; src: url('fonts/bite-the-bullet/bite-bullet.ttf');
-    font-family: indie-flower-regular; src: url('fonts/indie-flower/indie-flower-regular.ttf');
-    font-family: rustic-love-tattoo; src: url('fonts/rustic-love-tattoo/rustic-love-tattoo.otf');
+    font-family: Athena Rustic; src: url('fonts/athena-rustic-font/Athena Rustic.ttf'); /* doesn't work */
+    font-family: Bite _ Bullet; src: url('fonts/bite-the-bullet/Bite _ Bullet.ttf'); /* GOOD */
+    font-family: IndieFlower-Regular; src: url('fonts/Indie_Flower/IndieFlower-Regular.ttf'); /* doesn't work */
+    font-family: Rustic Love Tattoo; src: url('fonts/rustic_love_tattoo/Rustic Love Tattoo.otf'); /* GOOD */
 }
 
 /* Main styling set inside the body for entire site 
    setting the initial width and margin */
    body {
     display: block;
-    font-family: athena-rustic;
+    font-family: Rustic Love Tattoo;
     margin: auto;
     max-width: 760px;
     color: #3d1c39;
-    background-color: #ffba59;
+    background-color: var(--primary-color);
 }
+
+/* ************************************************************* */
+/* Skip button styling */
+/* ************************************************************* */
+/* this will improve the user experience and accessibility */
+.access-skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .access-skip-links a {
+    position: absolute;
+    top: -3em;
+    /* Reasonable Colors (7:1) color shade contrast ratio */
+    background-color: var(--color-powder-6);
+    color: var(--color-pink-2);
+    padding: .5em 1em;
+    font-weight: bold;
+  }
+  
+  .access-skip-links a:focus {
+    top: 0;
+    left: 70%;
+  }
 
 /* ************************************************************* */
 /*  Navigation Bar Styling
     Creating one column of buttons with colour change hover state */
 /* ************************************************************* */
- 
-
 
 /* .company-logo {
     font-family: Bite _ Bullet;
 } */
 
+nav ul {
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+nav ul li {
+    font-size: 1rem;
+    padding: 1rem 1rem 4rem;
+    border-radius: 25px;
+}
+
+nav ul li:nth-child(1) {
+    /* opacity: .5; */
+    grid-column: 1; 
+    grid-row: 1 / 5;
+    background-color: var(--white-color);
+    /* z-index: 1; */
+}
+
+nav ul li:nth-child(2) {
+    background-color: var(--primary-color);
+    /* opacity: .5; */
+    grid-column: 1;
+    grid-row: 2 / 5;
+}
+
+nav ul li:nth-child(3) {
+    background-color: var(--white-color);
+    /* opacity: .5; */
+    grid-column: 1;
+    grid-row: 3 / 5;
+}
+
+nav ul li:nth-child(4) {
+    background-color: var(--primary-color);
+    /* opacity: .5; */
+    grid-column: 1;
+    grid-row: 4 / 5;
+}
+
+.order-container {
+    background-color: var(--white-color);
+    padding: 1rem 1rem 10rem;
+}
+
+.tuesday-deal {
+    background-color: var(--white-color);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 1rem 1rem 10rem;
+}
 
 /* ************************************************************* */
 /* Media Query 
