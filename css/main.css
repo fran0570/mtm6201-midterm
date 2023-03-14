@@ -8,6 +8,20 @@
     CHECK COLORS WITH WAVES!!!!!!!!!!!!!!!!!!
     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+    TODO
+    TODO
+    TODO
+    TODO
+
+    ANIMATION
+    RESPONSIVE IMAGE
+    FIX FONT NOT LOADING SO THEY CAN HAVE HIGHER CONTRAST AS NEEDED FOR ACCESSIBILITY
+
+    TODO
+    TODO
+    TODO
+    TODO
+
     -Mobile first styling approche with responsive design with media queries
     -CSS should be valid and well-formatted
     -Comments should be provided for explaining
@@ -136,36 +150,66 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--white-color)
+    color: var(--white-color);
 }
 
-nav ul li:nth-child(1) {
+.button-home {
     /* opacity: .5; */
     grid-column: 1; 
     grid-row: 1 / 5;
     background-color: var(--secondary-color);
-    /* z-index: 1; */
+    z-index: 1;
+
+    /* interactive menu transition animation on hover part A*/
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.button-home:hover {
+    /* interactive menu transition animation on hover part B*/
+    transform: translateY(5%);
 }
 
-nav ul li:nth-child(2) {
+.button-menu {
     background-color: var(--primary-color);
     /* opacity: .5; */
     grid-column: 1;
     grid-row: 2 / 5;
+    z-index: 2;
+
+    /* interactive menu transition animation on hover part A*/
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.button-menu:hover {
+    /* interactive menu transition animation on hover part B*/
+    transform: translateY(5%);
 }
 
-nav ul li:nth-child(3) {
+.button-about {
     background-color: var(--secondary-color);
-    /* opacity: .5; */
     grid-column: 1;
     grid-row: 3 / 5;
+    z-index: 3;
+
+    /* interactive menu transition animation on hover part A*/
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.button-about:hover {
+    /* interactive menu transition animation on hover part B*/
+    transform: translateY(5%);
 }
 
-nav ul li:nth-child(4) {
+.button-contact {
     background-color: var(--primary-color);
     /* opacity: .5; */
     grid-column: 1;
     grid-row: 4 / 5;
+    z-index: 4;
+
+    /* interactive menu transition animation on hover part A*/
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.button-contact:hover {
+    /* interactive menu transition animation on hover part B*/
+    transform: translateY(5%);
 }
 
 /* ************************************************************* */
