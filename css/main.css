@@ -40,16 +40,16 @@
 
 /* Main styling for entire site */
 html {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
-box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-    /* display: block; */
     font-family: Rustic Love Tattoo;
     margin: auto;
     width: 480px;
@@ -57,10 +57,40 @@ body {
     background-color: var(--primary-color);
 }
 
+h1 {
+    /* TEMP */
+    font-family: Bite _ Bullet;
+    font-size: 5rem;
+}
+
 h2 {
     /* TEMP */
     font-family: Bite _ Bullet;
     font-size: 5rem;
+}
+
+h3 {
+    /* TEMP */
+    font-family: Bite _ Bullet;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+p {
+    /* TEMP */
+    font-family: Rustic Love Tattoo;
+    font-size: 1.1rem;
+}
+
+button {
+    font-family: Bite _ Bullet;
+    font-size: 3rem;
+}
+
+a {
+    /* TEMP */
+    font-family: Bite _ Bullet;
+    font-size: 2rem;
 }
 
 /* ************************************************************* */
@@ -101,16 +131,19 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 1rem;
-    padding: 1rem 1rem 4rem;
+    padding: 1rem 1rem 3rem;
     border-radius: 25px;
+}
+
+nav ul li a {
+    color: var(--white-color)
 }
 
 nav ul li:nth-child(1) {
     /* opacity: .5; */
     grid-column: 1; 
     grid-row: 1 / 5;
-    background-color: var(--white-color);
+    background-color: var(--secondary-color);
     /* z-index: 1; */
 }
 
@@ -122,7 +155,7 @@ nav ul li:nth-child(2) {
 }
 
 nav ul li:nth-child(3) {
-    background-color: var(--white-color);
+    background-color: var(--secondary-color);
     /* opacity: .5; */
     grid-column: 1;
     grid-row: 3 / 5;
@@ -230,6 +263,10 @@ nav ul li:nth-child(4) {
     background-image: url('../images/pexels-roman-odintsov-4958641.jpg');
 }
 
+.order-container-guess p {
+    color: var(--white-color);
+}
+
 .button.guess {
     width: 200px;
     height: 100px;
@@ -265,8 +302,9 @@ nav ul li:nth-child(4) {
 }
 
 .promo-card {
-    margin: var(--margins);
-    transform: translate(0, -80%);
+    /* margin: var(--margins); */
+    margin-top: 2rem;
+    transform: translate(0, -90%);
 }
 
 .promo-card img {
@@ -275,9 +313,9 @@ nav ul li:nth-child(4) {
 
 .bite2 {
     position: absolute;
-    top: 2752px;
+    top: 2800px;
     z-index: 4;
-
+    transform: scaleX(-1);
     width: 480px;
 }
 
@@ -295,7 +333,7 @@ footer {
     position: absolute;
 
     width: 480px;
-    top: 2990px;
+    top: 3000px;
     z-index: 5;
 }
 
@@ -309,26 +347,104 @@ footer .social-link {
     grid-template-rows: 1fr 1fr;
 }
 
-footer .social-link a {
-    margin: 4px;
-}
-
 /* ************************************************************* */
 /* Media Query 
    No specific media queries and breakpoints are required but 
    should be used as necessary */
 /* ************************************************************* */
-@media screen and (min-width: 760px) {
+/* Medium Screens (tablets) */
+@media screen and (min-width: 768px) {
 
-    /* maximum width of the container is 1200px */
     body {
-        /* max-width: 1200px; */
+        width: 768px;
+    }
+        
+    .logo-container {
+        height: 900px;
     }
 
-    /* ************************************************************* */
-    /* Naviation Re-styling 
-       Use flexbox layout for re-organizing horizontally the nav elements: 
-       logo, list, search bar and search button. Also flexbox on the 
-       about us element */
-    /* ************************************************************* */
+    .bite1 {
+        width: 480px;
+    }
+
+    .button.login {
+        margin-left: 275px;
+    }
+
+    .tuesday-deal img {
+        height: 700px;
+        width: 400px;
+    }
+    
+    .taco-outline {
+        top: 2050px;
+        margin-left: 280px;
+    }
+
+    .button.guess {
+        margin-left: 245px;
+    }
+
+    .menu {
+        top: 2550px;
+        width: 768px;
+    }
+    
+    .bite2 {
+        top: 3200px;
+        width: 480px;
+    }
+    
+    footer {    
+        width: 768px;
+        top: 3400px;
+    }
+}
+/* Large Screens (desktop) */
+@media screen and (min-width: 992px) {
+
+    body {
+        width: 992px;
+    }
+        
+    .logo-container {
+        height: 1100px;
+    }
+
+    .bite1 {
+        width: 480px;
+    }
+
+    .button.login {
+        margin-left: 380px;
+    }
+
+    .tuesday-deal img {
+        height: 700px;
+        width: 400px;
+    }
+    
+    .taco-outline {
+        top: 2250px;
+        margin-left: 380px;
+    }
+
+    .button.guess {
+        margin-left: 340px;
+    }
+
+    .menu {
+        top: 2750px;
+        width: 992px;
+    }
+    
+    .bite2 {
+        top: 3400px;
+        width: 480px;
+    }
+    
+    footer {
+        top: 3600px;    
+        width: 992px;
+    }
 }
