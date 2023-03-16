@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <!-- CSS Reset -->
-        <link rel="stylesheet" href="css/reset.css">
-
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
     <title>Midterm Project - Prototype - Second Page - Menu</title>
-
-        <!-- Font Awesome link for icons -->
-        <script src="https://kit.fontawesome.com/84469dfcbe.js" crossorigin="anonymous"></script>
-        <!-- css stylesheet link -->
-        <link rel="stylesheet" href="css/main.css">
+    <!-- Font Awesome link for icons -->
+    <script src="https://kit.fontawesome.com/84469dfcbe.js" crossorigin="anonymous"></script>
+    <!-- css stylesheet link -->
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
     <!-- The aria-label: attribute is intended for interactive elements only. -->
@@ -39,36 +36,22 @@
             </ul>
         </nav>
         <!-- company logo -->
-        <div class="logo-container">
-            <img class="company-logo frame1" src="images/tacos-logo00.svg" alt="company grays tacos logo" aria-details="company logo">
-            <img class="company-logo frame2" src="images/tacos-logo01.svg" alt="company grays tacos logo" aria-details="company logo">
-            <img class="company-logo frame3" src="images/tacos-logo02.svg" alt="company grays tacos logo" aria-details="company logo">
-            <img class="company-logo frame4" src="images/tacos-logo03.svg" alt="company grays tacos logo" aria-details="company logo">
-        </div>
+        <section class="account-deal" role="region">
+            <div><h2>CREATE ACCOUNT</h2></div>
+            <div><h2>SPECIAL OFFER</h2></div>
+            <div><img src="images/pexels-los-muertos-crew-8230019.jpg" alt="2x tacos promotion image" role="img" aria-details="create an account and get 2 for 1 promo image"></div>
+        </section>
         <div class="order-container">
             <picture>
                 <source srcset="images/bite-mark-992x992.svg" media="(min-width: 992px)">
                 <source srcset="images/bite-mark-768x768.svg" media="(min-width: 768px)">
                 <img class="bite1" src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element placeholder image">
             </picture>
-            <!-- quick login and place order button -->
-            <button class="button login" type="button" aria-label="Login and order" href="#">Login/Order</button>
         </div>
     </header>
     <!-- fold -->
     <!-- special offer and main order section -->
     <main class="main-ordering" id="main" role="main">
-        <section class="tuesday-deal" role="region">
-            <div><h2>TACO TUESDAY</h2></div>
-            <div><h2>SPECIAL DEALS</h2></div>
-            <div><img class="tuesday-promo-img" src="images/pexels-los-muertos-crew-8230019.jpg" alt="2x tacos promotion image" role="img" aria-details="tuesday 2 for 1 promo image"></div>
-        </section>
-        <div><img class="taco-outline" src="images/taco-outlines-o.svg" alt="taco logo seperator" aria-details="taco image seperator"></div>
-        <!-- guess ordering section; secondary order section without the creation of an account -->
-        <section class="order-container-guess" role="region">
-            <p>Don't feel like creating a profile. No worries. You can still place an order as a guess and at grays tacos we treat our guess like right just like we would our own family or should I say familia.</p>
-            <button class="button guess" type="button" aria-label="Place order as guess" href="#">Order</button>
-        </section>
         <!-- promotional item front page menu and for returning customer previous/favorite orders/items or ai based suggestion section -->
         <section class="menu" role="region">
             <!-- menu heading -->
@@ -82,11 +65,23 @@
             <!-- promo card 4 -->
             <div class="promo-card four"><a href=""><img src="images/pexels-roman-odintsov-4958531.jpg" alt="Combo 4 offer 4 food image" role="img" aria-details="promo four image"><h3>Offer 4</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
             
-            <!-- <div class="promo-card five"><a href=""><img src="images/pexels-roman-odintsov-4958531.jpg" alt="Combo 5 offer 5 food image" role="img" aria-details="promo five image"><h3>Offer 4</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
+            <div class="promo-card five"><a href=""><img src="images/pexels-roman-odintsov-4958531.jpg" alt="Combo 5 offer 5 food image" role="img" aria-details="promo five image"><h3>Offer 5</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
             
-            <div class="promo-card six"><a href=""><img src="images/pexels-roman-odintsov-4958531.jpg" alt="Combo 6 offer 6 food image" role="img" aria-details="promo six image"><h3>Offer 4</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div> -->
-
+            <div class="promo-card six"><a href=""><img src="images/pexels-roman-odintsov-4958531.jpg" alt="Combo 6 offer 6 food image" role="img" aria-details="promo six image"><h3>Offer 6</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
         </section>
+        <div><img class="taco-outline" src="images/taco-outlines-o.svg" alt="taco logo seperator" aria-details="taco image seperator"></div>
+        <!-- guess ordering section; secondary order section without the creation of an account -->
+        <section class="order-container-guess" role="region">
+            <p>Don't feel like creating a profile. No worries. You can still place an order as a guess and at grays tacos we treat our guess like right just like we would our own family or should I say familia.</p>
+            <button class="button guess" type="button" aria-label="Place order as guess" href="#">Order</button>
+        </section>
+        <!-- guess ordering section; secondary order section without the creation of an account -->
+        <section class="quote" role="region">
+            <p>"Best mexican food I've ever had and the workers treat you better than your own familly"</p>
+            <!-- quick login and place order button -->
+            <button class="button login" type="button" aria-label="Login and order" href="#">Login</button>
+        </section>
+
     </main>
     
     <picture class="bite2">

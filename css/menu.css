@@ -1,0 +1,541 @@
+/* ************************************************************* */
+/*  Midterm Project - Prototype - CSS */
+/* ************************************************************* */
+
+/* ************************************************************* */
+/*  NOTES
+    -Colors: orange = #ffba59, purple = , teal= #69c0af, and white
+    CHECK COLORS WITH WAVES!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    TODO
+    TODO
+    TODO
+    TODO
+
+    ANIMATION
+    RESPONSIVE IMAGE
+    FIX FONT NOT LOADING SO THEY CAN HAVE HIGHER CONTRAST AS NEEDED FOR ACCESSIBILITY
+
+    TODO
+    TODO
+    TODO
+    TODO
+
+    -Mobile first styling approche with responsive design with media queries
+    -CSS should be valid and well-formatted
+    -Comments should be provided for explaining
+    
+    The site must follow accessibility guidelines using proper contrast, 
+    alt text for images, skip links, aria roles, proper HTML syntax and schema information. 
+   */
+/* ************************************************************* */
+
+
+:root {
+    /* costum property/variable */
+    /* colors */
+    --primary-color: #ffba59;
+    --secondary-color: #3d1c39;
+    --highlight-color:#69c0af;
+    --white-color: white;
+    /* spacing */
+    --paddings: 2rem;
+    --margins: 1rem;
+}
+
+/* loading fonts */
+@font-face {
+    font-family: Athena Rustic; src: url('fonts/athena-rustic-font/Athena Rustic.ttf'); /* doesn't work */
+    font-family: Bite _ Bullet; src: url('fonts/bite-the-bullet/Bite _ Bullet.ttf'); /* GOOD */
+    font-family: IndieFlower-Regular; src: url('fonts/Indie_Flower/IndieFlower-Regular.ttf'); /* doesn't work */
+    font-family: Rustic Love Tattoo; src: url('fonts/rustic_love_tattoo/Rustic Love Tattoo.otf'); /* GOOD */
+}
+
+/* Main styling for entire site */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Rustic Love Tattoo;
+    margin: auto;
+    width: 480px;
+    color: #3d1c39;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    /* TEMP */
+    font-family: Bite _ Bullet;
+    font-size: 5rem;
+}
+
+h2 {
+    /* TEMP */
+    font-family: Bite _ Bullet;
+    font-size: 5rem;
+}
+
+h3 {
+    /* TEMP */
+    font-family: Bite _ Bullet;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+p {
+    /* TEMP */
+    font-family: Rustic Love Tattoo;
+    font-size: 1.1rem;
+}
+
+button {
+    font-family: Bite _ Bullet;
+    font-size: 3rem;
+}
+
+a {
+    /* TEMP */
+    font-family: Bite _ Bullet;
+    font-size: 2rem;
+}
+
+/* ************************************************************* */
+/* Skip button styling */
+/* ************************************************************* */
+/* this will improve the user experience and accessibility */
+.access-skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.access-skip-links a {
+    position: absolute;
+    top: -3em;
+    /* Reasonable Colors (7:1) color shade contrast ratio */
+    background-color: var(--color-powder-6);
+    color: var(--color-pink-2);
+    padding: .5em 1em;
+    font-weight: bold;
+}
+  
+.access-skip-links a:focus {
+    top: 0;
+    left: 70%;
+}
+
+/* ************************************************************* */
+/*  Navigation Bar Styling
+    Creating one column of buttons with colour change hover state*/
+/* ************************************************************* */
+
+nav ul {
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+nav ul li {
+    padding: 1rem 1rem 3rem;
+    border-radius: 25px;
+}
+
+nav ul li a {
+    color: var(--white-color);
+}
+
+.button-home {
+    /* opacity: .5; */
+    grid-column: 1; 
+    grid-row: 1 / 5;
+    background-color: var(--secondary-color);
+    z-index: 1;
+
+    /* interactive menu transition animation on hover part A*/
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.button-home:hover {
+    /* interactive menu transition animation on hover part B*/
+    transform: translateY(5%);
+}
+
+.button-menu {
+    background-color: var(--primary-color);
+    /* opacity: .5; */
+    grid-column: 1;
+    grid-row: 2 / 5;
+    z-index: 2;
+
+    /* interactive menu transition animation on hover part A*/
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.button-menu:hover {
+    /* interactive menu transition animation on hover part B*/
+    transform: translateY(5%);
+}
+
+.button-about {
+    background-color: var(--secondary-color);
+    grid-column: 1;
+    grid-row: 3 / 5;
+    z-index: 3;
+
+    /* interactive menu transition animation on hover part A*/
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.button-about:hover {
+    /* interactive menu transition animation on hover part B*/
+    transform: translateY(5%);
+}
+
+.button-contact {
+    background-color: var(--primary-color);
+    /* opacity: .5; */
+    grid-column: 1;
+    grid-row: 4 / 5;
+    z-index: 4;
+
+    /* interactive menu transition animation on hover part A*/
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.button-contact:hover {
+    /* interactive menu transition animation on hover part B*/
+    transform: translateY(5%);
+}
+
+/* ************************************************************* */
+/*  order container
+/* ************************************************************* */
+
+.order-container {
+    position: relative;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+.account-deal {
+    padding: var(--paddings);
+    padding-bottom: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* creating a rounded buttom on section element */
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.account-deal div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.account-deal div:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.account-deal div:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.account-deal img {
+    height: 500px;
+    width: 200px;
+}
+
+
+/* ************************************************************* */
+/*  Menu
+/* ************************************************************* */
+
+.bite1 {
+    /* transform: translate(0, 2%); */
+    position: absolute;
+    top: -100px;
+    width: 480px;
+}
+
+.menu {
+    background-color: var(--white-color);
+    border-radius: 25px;
+    /* transform: translate(0, -40%); */
+    z-index: 3;
+    padding-top: 4rem;
+    padding-left: var(--paddings);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    position: absolute;
+    top: 1100px;
+    width: 480px;
+}
+
+.menu div:nth-child(1) {
+    grid-column: 1 / 3;
+    transform: translate(0, -10%);
+}
+
+.promo-card {
+    /* margin: var(--margins); */
+    margin-top: 2rem;
+    transform: translate(0, -90%);
+}
+
+.promo-card img {
+    width: 150px;
+}
+
+.taco-outline {
+    position: absolute;
+    top: 1550px;
+    margin-left: 160px;
+
+    width: 10rem;
+    /* position: relative;
+    transform: translate( 100%, -50%); */
+    z-index: 2;
+
+    /* animation: name | duration | timing-function | delay | iteration-count |
+	direction | fill-mode */
+	animation: shake 2s ease-in-out 5s infinite normal forwards;
+}
+
+@keyframes shake {
+	/* this method gives us 4 keyframes */
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(5deg);
+	} 
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.order-container-guess {
+    position: relative;
+    height: 400px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    padding-left: var(--paddings);
+    padding-right: var(--paddings);
+    border-radius: 25px;
+
+    position: absolute;
+    top: 2200px;
+    width: 480px;
+    z-index: 4;
+
+    background-image: url('../images/pexels-roman-odintsov-4958641.jpg');
+}
+
+.order-container-guess p {
+    color: var(--white-color);
+}
+
+.button.guess {
+    width: 200px;
+    height: 100px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('../images/button-o.svg');
+
+    position: absolute;
+    top: 200px;
+    margin-left: 110px;
+
+    /* scale transition animation on hover part A */
+    /* transform-origin: top left; */
+    transform: scale(1);
+	transition: transform 0.5s ease-out;
+}
+
+.button.guess:hover {
+    /* scale transition animation on hover part B */
+    transform: scale(1.5);
+}
+
+.quote p {
+    position: absolute;
+    top: 2650px;
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.button.login {
+    width: 400px;
+    height: 150px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('../images/button-w.svg');
+    background-repeat: no-repeat;
+
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    top: 2950px;
+    margin-left: 85px;
+    
+    /* scale transition animation on hover part A */
+    /* transform-origin: top left; */
+    transform: scale(1);
+	transition: transform 0.5s ease-out;
+}
+
+.button.login:hover {
+    /* scale transition animation on hover part B */
+    transform: scale(1.5);
+}
+
+.bite2 {
+    position: absolute;
+    top: 3100px;
+    z-index: 4;
+    transform: scaleX(-1);
+    width: 480px;
+}
+
+footer {
+    
+    padding-left: var(--paddings);
+    padding-bottom: var(--paddings);
+    /* padding-bottom: 4rem; */
+    background-color: var(--white-color);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr 1fr);
+
+    position: absolute;
+
+    width: 480px;
+    top: 3300px;
+    z-index: 5;
+}
+
+footer div:nth-child(1) {
+    grid-column: 1 / 3;
+}
+
+footer .social-link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+/* ************************************************************* */
+/* Media Query 
+   No specific media queries and breakpoints are required but 
+   should be used as necessary */
+/* ************************************************************* */
+/* Medium Screens (tablets) */
+@media screen and (min-width: 768px) {
+
+    body {
+        width: 768px;
+    }
+        
+    .logo-container {
+        height: 900px;
+    }
+
+    .bite1 {
+        width: 768px;
+    }
+
+    .button.login {
+        margin-left: 275px;
+    }
+
+    .tuesday-deal img {
+        height: 700px;
+        width: 400px;
+    }
+    
+    .taco-outline {
+        top: 2050px;
+        margin-left: 280px;
+    }
+
+    .button.guess {
+        margin-left: 245px;
+    }
+
+    .menu {
+        top: 2550px;
+        width: 768px;
+    }
+    
+    .bite2 {
+        top: 3200px;
+        width: 768px;
+    }
+    
+    footer {
+        top: 3400px;    
+        width: 768px;
+    }
+}
+/* Large Screens (desktop) */
+@media screen and (min-width: 992px) {
+
+    body {
+        width: 992px;
+    }
+        
+    .logo-container {
+        height: 1100px;
+    }
+
+    .bite1 {
+        width: 992px;
+    }
+
+    .button.login {
+        margin-left: 380px;
+    }
+
+    .tuesday-deal img {
+        height: 700px;
+        width: 400px;
+    }
+    
+    .taco-outline {
+        top: 2250px;
+        margin-left: 380px;
+    }
+
+    .button.guess {
+        margin-left: 340px;
+    }
+
+    .menu {
+        top: 2750px;
+        width: 992px;
+    }
+    
+    .bite2 {
+        top: 3400px;
+        width: 992px;
+    }
+    
+    footer {
+        top: 3600px;    
+        width: 992px;
+    }
+}

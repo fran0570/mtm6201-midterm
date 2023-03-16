@@ -13,7 +13,7 @@
         <!-- Font Awesome link for icons -->
         <script src="https://kit.fontawesome.com/84469dfcbe.js" crossorigin="anonymous"></script>
         <!-- css stylesheet link -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <!-- The aria-label: attribute is intended for interactive elements only. -->
@@ -24,126 +24,84 @@
 
     <!-- Add skip link for accessibility -->
     <ul class="access-skip-links">
-      <li><a aria-label="Skip to navigation" href="#nav">Skip to the navigation</a></li>
-      <li><a aria-label="Skip to main guess ordering" href="#main">Skip to the main content</a></li>
-  </ul>
-  <!-- Website header and front page above the fold -->
-  <header class="site-header" aria-details="site banner">
-      <!-- Website navigation bar -->
-      <nav class="navbar" id="nav" role="navigation" aria-label="main site navigation">
-          <ul>
-              <li class="button-home"><a role="button" aria-label="Home Page" href="/index.html" target="_self">Home</a></li>
-              <li class="button-menu"><a role="button" aria-label="Menu Page" href="/menu.html" target="_self">Menu</a></li>
-              <li class="button-about"><a role="button" aria-label="About Us Page" href="/contact.html" target="_self">About Us</a></li>
-              <li class="button-contact"><a role="button" aria-label="Contact Us Page" href="/contact.html" target="_self">Contact Us</a></li>
-          </ul>
-      </nav>
-      <!-- company logo -->
-      <div class="logo-container">
-          <img class="company-logo frame1" src="images/tacos-logo00.svg" alt="company grays tacos logo" aria-details="company logo">
-          <img class="company-logo frame2" src="images/tacos-logo01.svg" alt="company grays tacos logo" aria-details="company logo">
-          <img class="company-logo frame3" src="images/tacos-logo02.svg" alt="company grays tacos logo" aria-details="company logo">
-          <img class="company-logo frame4" src="images/tacos-logo03.svg" alt="company grays tacos logo" aria-details="company logo">
-      </div>
-      <div class="order-container">
-          <picture>
-              <source srcset="images/bite-mark-992x992.svg" media="(min-width: 992px)">
-              <source srcset="images/bite-mark-768x768.svg" media="(min-width: 768px)">
-              <img class="bite1" src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element placeholder image">
-          </picture>
-          <!-- quick login and place order button -->
-          <button class="button login" type="button" aria-label="Login and order" href="#">Login/Order</button>
-      </div>
-  </header>
-  <!-- fold -->
-  <!-- special offer and main order section -->
-  <main class="main-ordering" id="main" role="main">
-      <section class="tuesday-deal" role="region">
-          <div><h2>TACO TUESDAY</h2></div>
-          <div><h2>SPECIAL DEALS</h2></div>
-          <div><img class="tuesday-promo-img" src="images/pexels-los-muertos-crew-8230019.jpg" alt="2x tacos promotion image" role="img" aria-details="tuesday 2 for 1 promo image"></div>
-      </section>
-      <div><img class="taco-outline" src="images/taco-outlines-o.svg" alt="taco logo seperator" aria-details="taco image seperator"></div>
-      <!-- guess ordering section; secondary order section without the creation of an account -->
-      <section class="order-container-guess" role="region">
-          <p>Don't feel like creating a profile. No worries. You can still place an order as a guess and at grays tacos we treat our guess like right just like we would our own family or should I say familia.</p>
-          <button class="button guess" type="button" aria-label="Place order as guess" href="#">Order</button>
-      </section>
-      <!-- promotional item front page menu and for returning customer previous/favorite orders/items or ai based suggestion section -->
-      <section class="menu" role="region">
-          <!-- menu heading -->
-          <div><h2>Menu</h2></div>
-          <!-- promo card 1 -->
-          <div class="promo-card one"><a href=""><img src="images/pexels-roman-odintsov-4958425.jpg" alt="Combo 1 offer 1 food image" role="img" aria-details="promo one image"><h3>Offer 1</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
-          <!-- promo card 2 -->
-          <div class="promo-card two"><a href=""><img src="images/pexels-roman-odintsov-4958520.jpg" alt="Combo 2 offer 2 food image" role="img" aria-details="promo two image"><h3>Offer 2</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
-          <!-- promo card 3 -->
-          <div class="promo-card three"><a href=""><img src="images/pexels-roman-odintsov-4958526.jpg" alt="Combo 3 offer 3 food image" role="img" aria-details="promo three image"><h3>Offer 3</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
-          <!-- promo card 4 -->
-          <div class="promo-card four"><a href=""><img src="images/pexels-roman-odintsov-4958531.jpg" alt="Combo 4 offer 4 food image" role="img" aria-details="promo four image"><h3>Offer 4</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
-          
-          <!-- <div class="promo-card five"><a href=""><img src="images/pexels-roman-odintsov-4958531.jpg" alt="Combo 5 offer 5 food image" role="img" aria-details="promo five image"><h3>Offer 4</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
-          
-          <div class="promo-card six"><a href=""><img src="images/pexels-roman-odintsov-4958531.jpg" alt="Combo 6 offer 6 food image" role="img" aria-details="promo six image"><h3>Offer 4</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div> -->
+        <li><a aria-label="Skip to navigation" href="#nav">Skip to the navigation</a></li>
+        <li><a aria-label="Skip to main guess ordering" href="#main">Skip to the main content</a></li>
+    </ul>
+    <!-- Website header and front page above the fold -->
+    <header class="site-header" aria-details="site banner">
+        <!-- Website navigation bar -->
+        <nav class="navbar" id="nav" role="navigation" aria-label="main site navigation">
+            <ul>
+                <li class="button-home"><a role="button" aria-label="Home Page" href="/index.html" target="_self">Home</a></li>
+                <li class="button-menu"><a role="button" aria-label="Menu Page" href="/menu.html" target="_self">Menu</a></li>
+                <li class="button-about"><a role="button" aria-label="About Us Page" href="/contact.html" target="_self">About Us</a></li>
+                <li class="button-contact"><a role="button" aria-label="Contact Us Page" href="/contact.html" target="_self">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- company logo -->
+        <section class="account-deal" role="region">
+            <div><h2>CREATE ACCOUNT</h2></div>
+            <div><h2>SPECIAL OFFER</h2></div>
+            <div><img src="images/pexels-los-muertos-crew-8230019.jpg" alt="2x tacos promotion image" role="img" aria-details="create an account and get 2 for 1 promo image"></div>
+        </section>
+        <div class="order-container">
+            <picture>
+                <source srcset="images/bite-mark-992x992.svg" media="(min-width: 992px)">
+                <source srcset="images/bite-mark-768x768.svg" media="(min-width: 768px)">
+                <img class="bite1" src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element placeholder image">
+            </picture>
+        </div>
+    </header>
+    <!-- fold -->
+    <!-- special offer and main order section -->
+    <main class="main-ordering" id="main" role="main">
+        <!-- promotional item front page menu and for returning customer previous/favorite orders/items or ai based suggestion section -->
+        <section class="menu" role="region">
+            <!-- menu heading -->
+            <div><h2>Menu</h2></div>
+            <!-- promo card 1 -->
+            <div class="promo-card one"><a href=""><img src="images/pexels-roman-odintsov-4958425.jpg" alt="Combo 1 offer 1 food image" role="img" aria-details="promo one image"><h3>Offer 1</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
+            <!-- promo card 2 -->
+            <div class="promo-card two"><a href=""><img src="images/pexels-roman-odintsov-4958520.jpg" alt="Combo 2 offer 2 food image" role="img" aria-details="promo two image"><h3>Offer 2</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
+            <!-- promo card 3 -->
+            <div class="promo-card three"><a href=""><img src="images/pexels-roman-odintsov-4958526.jpg" alt="Combo 3 offer 3 food image" role="img" aria-details="promo three image"><h3>Offer 3</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
+            <!-- promo card 4 -->
+            <div class="promo-card four"><a href=""><img src="images/pexels-roman-odintsov-4958531.jpg" alt="Combo 4 offer 4 food image" role="img" aria-details="promo four image"><h3>Offer 4</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
+       </section>
+        <div><img class="taco-outline" src="images/taco-outlines-o.svg" alt="taco logo seperator" aria-details="taco image seperator"></div>
+        <!-- guess ordering section; secondary order section without the creation of an account -->
+        <section class="order-container-guess" role="region">
+            <p>Don't feel like creating a profile. No worries. You can still place an order as a guess and at grays tacos we treat our guess like right just like we would our own family or should I say familia.</p>
+            <button class="button guess" type="button" aria-label="Place order as guess" href="#">Order</button>
+        </section>
+        <!-- guess ordering section; secondary order section without the creation of an account -->
+        <section class="quote" role="region">
+            <p>"Best mexican food I've ever had and the workers treat you better than your own familly"</p>
+            <!-- quick login and place order button -->
+            <button class="button login" type="button" aria-label="Login and order" href="#">Login</button>
+        </section>
 
-      </section>
-  </main>
-  
-  <picture class="bite2">
-      <source srcset="images/bite-mark-992x992.svg" media="(min-width: 992px)">
-      <source srcset="images/bite-mark-768x768.svg" media="(min-width: 768px)">
-      <img src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element">
-  </picture>
-  
-  <!-- main page footer with social media and copyright -->
-  <footer role="contentinfo">
-      <div><h2>gray's taco</h2></div>
-      <div><p>We are located at: <br> 333 Dalhousie St, <br> Ottawa, ON K1N 7G1 <br> &copy; 2023 gray's tacos </p></div>
-      <div class="social-link">
-          <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" role="link" aria-label="facebook link"></i></a>
-          <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" role="link" aria-label="instagram link"></i></a>
-          <a href="https://twitter.com/home?lang=en"><i class="fa-brands fa-square-twitter" role="link" aria-label="twitter link"></i></a>
-          <a href="https://www.youtube.com/"><i class="fa-brands fa-square-youtube" role="link" aria-label="youtube link"></i></a>
-          <a href="https://www.whatsapp.com/"><i class="fa-brands fa-square-whatsapp" role="link" aria-label="whatsapp link"></i></a>
-          <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" role="link" aria-label="linkedin link"></i></a>
-          <a href="https://www.pinterest.ca/"><i class="fa fa-pinterest-square" role="link" aria-label="pinterest link"></i></a>
-          <a href="https://www.flickr.com/"><i class="fa fa-flickr" role="link" aria-label="flickr link"></i></a>
-      </div>
-
-  </footer>
-
-    <section class="owner" role="region">
-        <!-- Add Schema improving the way search engines read and represent your page -->
-        <h1>Meet the owner</h1>
-        <ul itemscope itemtype="https://schema.org/Person">
-          <li itemprop="name">Name: John Doe</li>
-          <li itemprop="jobTitle">Title: CEO</li>
-          <li itemprop="email">Email: johnjoe@jambox.ca</li>
-          <li itemprop="telephone">Phone: 613-000-0000</li>
-        </ul>
-        <h1>Address</h1>
-        <p itemscope="address" itemtype="https://schema.org/PostalAddress">
-          <span>Jambox Studios</span>
-          <span itemprop="streetAddress">123 Guitar Road,</span>
-          <span itemprop="addressLocality">Musicville,</span> <span itemprop="addressCountry">Danceistan</span>
-          <span intemprop="postalCode">B3T 0L0</span>
-        </p>
-    </section>
-
-    <section class="contact-section" role="form">
-        <h1>Contact Us</h1>
-        <!-- Add label for an input filed helping accessibility ie.: hit area  -->
-        <form action="thanks.html">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Full Name">
-          <label for="mail">Email</label>
-          <input type="email" id="mail" name="mail" placeholder="Email">
-          <label for="subject">Your Subject Title</label>
-          <input type="text" id="subject" name="subject" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
-          <button type="submit" role="button">Send</button>
-        </form>
-      </section>
+    </main>
+    
+    <picture class="bite2">
+        <source srcset="images/bite-mark-992x992.svg" media="(min-width: 992px)">
+        <source srcset="images/bite-mark-768x768.svg" media="(min-width: 768px)">
+        <img src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element">
+    </picture>
+    
+    <!-- main page footer with social media and copyright -->
+    <footer role="contentinfo">
+        <div><h2>gray's taco</h2></div>
+        <div><p>We are located at: <br> 333 Dalhousie St, <br> Ottawa, ON K1N 7G1 <br> &copy; 2023 gray's tacos </p></div>
+        <div class="social-link">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" role="link" aria-label="facebook link"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" role="link" aria-label="instagram link"></i></a>
+            <a href="https://twitter.com/home?lang=en"><i class="fa-brands fa-square-twitter" role="link" aria-label="twitter link"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-square-youtube" role="link" aria-label="youtube link"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fa-brands fa-square-whatsapp" role="link" aria-label="whatsapp link"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" role="link" aria-label="linkedin link"></i></a>
+            <a href="https://www.pinterest.ca/"><i class="fa fa-pinterest-square" role="link" aria-label="pinterest link"></i></a>
+            <a href="https://www.flickr.com/"><i class="fa fa-flickr" role="link" aria-label="flickr link"></i></a>
+        </div>
 </body>
 </html>
