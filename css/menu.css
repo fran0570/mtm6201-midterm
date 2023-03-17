@@ -1,5 +1,5 @@
 /* ************************************************************* */
-/*  Midterm Project - Prototype - CSS */
+/*  Midterm Project - Prototype - Menu CSS */
 /* ************************************************************* */
 
 /* ************************************************************* */
@@ -13,14 +13,26 @@
     TODO
     TODO
 
+    1- fix the media query for this menu page
+    2- rename tag html elements with proper menu page names and remove unnecessairy
+    css styling (cleanup code)
+
+    3- repeat 1 and 2 for the contact page
+    4- make images web efficient
+    4-- fix content put appropriate text and image
+    4--- make images RESPONSIVE IMAGE (resolution size)
+
+
     ANIMATION
-    RESPONSIVE IMAGE
+    
     FIX FONT NOT LOADING SO THEY CAN HAVE HIGHER CONTRAST AS NEEDED FOR ACCESSIBILITY
 
     TODO
     TODO
     TODO
     TODO
+
+
 
     -Mobile first styling approche with responsive design with media queries
     -CSS should be valid and well-formatted
