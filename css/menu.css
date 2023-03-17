@@ -225,14 +225,8 @@ nav ul li a {
 }
 
 /* ************************************************************* */
-/*  order container
+/*  account creation special offer section styling
 /* ************************************************************* */
-
-.order-container {
-    position: relative;
-    background-color: var(--primary-color);
-    z-index: 1;
-}
 
 .account-deal {
     padding: var(--paddings);
@@ -268,20 +262,47 @@ nav ul li a {
 
 
 /* ************************************************************* */
-/*  Menu
+/*  Menu section styling
 /* ************************************************************* */
+.bite-deco1 {
+    position: relative;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
 
 .bite1 {
-    /* transform: translate(0, 2%); */
     position: absolute;
     top: -100px;
     width: 480px;
 }
 
+.taco-outline {
+    position: absolute;
+    top: 1075px;
+    margin-left: 185px;
+
+    width: 10rem;
+    z-index: 4;
+
+    /* animation: name | duration | timing-function | delay | iteration-count |	direction | fill-mode */
+	animation: shake 2s ease-in-out 5s infinite normal forwards;
+}
+
+@keyframes shake {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(5deg);
+	} 
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
 .menu {
     background-color: var(--white-color);
     border-radius: 25px;
-    /* transform: translate(0, -40%); */
     z-index: 3;
     padding-top: 4rem;
     padding-left: var(--paddings);
@@ -300,7 +321,6 @@ nav ul li a {
 }
 
 .promo-card {
-    /* margin: var(--margins); */
     margin-top: 2rem;
     transform: translate(0, -90%);
 }
@@ -309,34 +329,9 @@ nav ul li a {
     width: 150px;
 }
 
-.taco-outline {
-    position: absolute;
-    top: 1550px;
-    margin-left: 160px;
-
-    width: 10rem;
-    /* position: relative;
-    transform: translate( 100%, -50%); */
-    z-index: 2;
-
-    /* animation: name | duration | timing-function | delay | iteration-count |
-	direction | fill-mode */
-	animation: shake 2s ease-in-out 5s infinite normal forwards;
-}
-
-@keyframes shake {
-	/* this method gives us 4 keyframes */
-	0% {
-		transform: rotate(0deg);
-	}
-	50% {
-		transform: rotate(5deg);
-	} 
-	100% {
-		transform: rotate(0deg);
-	}
-}
-
+/* ************************************************************* */
+/*  guess section styling
+/* ************************************************************* */
 .order-container-guess {
     position: relative;
     height: 400px;
@@ -364,13 +359,12 @@ nav ul li a {
     border: none;
     background-color: rgba(0, 0, 0, 0);
     background-image: url('../images/button-o.svg');
-
+bite-deco1
     position: absolute;
     top: 200px;
     margin-left: 110px;
 
     /* scale transition animation on hover part A */
-    /* transform-origin: top left; */
     transform: scale(1);
 	transition: transform 0.5s ease-out;
 }
@@ -380,9 +374,15 @@ nav ul li a {
     transform: scale(1.5);
 }
 
-.quote p {
+/* ************************************************************* */
+/*  quote-container login section styling
+/* ************************************************************* */
+.quote-container {
     position: absolute;
     top: 2650px;
+}
+
+.quote-container p {
     font-size: 3rem;
     text-align: center;
     margin-left: 2rem;
@@ -390,28 +390,26 @@ nav ul li a {
 }
 
 .button.login {
-    width: 400px;
-    height: 150px;
+    width: 200px;
+    height: 100px;
     border: none;
     background-color: rgba(0, 0, 0, 0);
     background-image: url('../images/button-w.svg');
-    background-repeat: no-repeat;
 
-    font-size: 4rem;
-    text-align: center;
+    scale: 1.5;
+
     position: absolute;
-    top: 2950px;
-    margin-left: 85px;
+    top: 300px;
+    margin-left: 150px;
     
     /* scale transition animation on hover part A */
-    /* transform-origin: top left; */
-    transform: scale(1);
+    transform: scale(1.5);
 	transition: transform 0.5s ease-out;
 }
 
 .button.login:hover {
     /* scale transition animation on hover part B */
-    transform: scale(1.5);
+    transform: scale(1.75);
 }
 
 .bite2 {
@@ -461,45 +459,63 @@ footer .social-link {
     body {
         width: 768px;
     }
-        
-    .logo-container {
-        height: 900px;
-    }
 
-    .bite1 {
-        width: 768px;
-    }
-
-    .button.login {
-        margin-left: 275px;
-    }
-
-    .tuesday-deal img {
+    .account-deal img {
         height: 700px;
         width: 400px;
     }
     
-    .taco-outline {
-        top: 2050px;
-        margin-left: 280px;
+    .bite1 {
+        top: 5px;
+        width: 768px;
     }
 
-    .button.guess {
-        margin-left: 245px;
+    .taco-outline {
+        top: 1400px;
+        margin-left: 200px;
     }
 
     .menu {
-        top: 2550px;
+        top: 1400px;
         width: 768px;
     }
+
+    .order-container-guess {
+        top: 2400px;
+        width: 768px;
+    }
+
+    .order-container-guess p {
+        margin-top: 2rem;
+    }
+
+    .button.guess {
+        position: absolute;
+        top: 200px;
+        margin-left: 245px;
+    }
+
+    .quote-container {
+        top: 2900px;
+    }
     
+    .quote-container p {
+        margin-right: 3rem;
+    }
+    
+    .button.login {  
+        position: absolute;
+        top: 250px;
+        margin-left: 300px;
+    }
+
     .bite2 {
-        top: 3200px;
+        top: 3300px;
         width: 768px;
     }
     
     footer {
-        top: 3400px;    
+        top: 3500px;    
         width: 768px;
     }
 }
@@ -507,47 +523,65 @@ footer .social-link {
 @media screen and (min-width: 992px) {
 
     body {
-        width: 992px;
-    }
-        
-    .logo-container {
-        height: 1100px;
+        width: 768px;
     }
 
-    .bite1 {
-        width: 992px;
-    }
-
-    .button.login {
-        margin-left: 380px;
-    }
-
-    .tuesday-deal img {
+    .account-deal img {
         height: 700px;
         width: 400px;
     }
     
-    .taco-outline {
-        top: 2250px;
-        margin-left: 380px;
+    .bite1 {
+        top: 5px;
+        width: 768px;
     }
 
-    .button.guess {
-        margin-left: 340px;
+    .taco-outline {
+        top: 1400px;
+        margin-left: 200px;
     }
 
     .menu {
-        top: 2750px;
-        width: 992px;
+        top: 1400px;
+        width: 768px;
+    }
+
+    .order-container-guess {
+        top: 2400px;
+        width: 768px;
+    }
+
+    .order-container-guess p {
+        margin-top: 2rem;
+    }
+
+    .button.guess {
+        position: absolute;
+        top: 200px;
+        margin-left: 245px;
+    }
+
+    .quote-container {
+        top: 2900px;
     }
     
+    .quote-container p {
+        margin-right: 3rem;
+    }
+    
+    .button.login {  
+        position: absolute;
+        top: 250px;
+        margin-left: 300px;
+    }
+
     .bite2 {
-        top: 3400px;
-        width: 992px;
+        top: 3300px;
+        width: 768px;
     }
     
     footer {
-        top: 3600px;    
-        width: 992px;
+        top: 3500px;    
+        width: 768px;
     }
 }

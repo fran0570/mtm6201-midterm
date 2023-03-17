@@ -22,7 +22,7 @@
     <!-- Add skip link for accessibility -->
     <ul class="access-skip-links">
         <li><a aria-label="Skip to navigation" href="#nav">Skip to the navigation</a></li>
-        <li><a aria-label="Skip to main guess ordering" href="#main">Skip to the main content</a></li>
+        <li><a aria-label="Skip to main guessbite-deco-container ordering" href="#main">Skip to the main content</a></li>
     </ul>
     <!-- Website header and front page above the fold -->
     <header class="site-header" aria-details="site banner">
@@ -35,23 +35,24 @@
                 <li class="button-contact"><a role="button" aria-label="Contact Us Page" href="/contact.html" target="_self">Contact Us</a></li>
             </ul>
         </nav>
-        <!-- company logo -->
+        <!-- account creation special offer section -->
         <section class="account-deal" role="region">
             <div><h2>CREATE ACCOUNT</h2></div>
             <div><h2>SPECIAL OFFER</h2></div>
             <div><img src="images/pexels-los-muertos-crew-8230019.jpg" alt="2x tacos promotion image" role="img" aria-details="create an account and get 2 for 1 promo image"></div>
         </section>
-        <div class="order-container">
-            <picture>
-                <source srcset="images/bite-mark-992x992.svg" media="(min-width: 992px)">
-                <source srcset="images/bite-mark-768x768.svg" media="(min-width: 768px)">
-                <img class="bite1" src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element placeholder image">
-            </picture>
-        </div>
+        
+        <picture class="bite-deco1">
+            <source srcset="images/bite-mark-992x992.svg" media="(min-width: 992px)">
+            <source srcset="images/bite-mark-768x768.svg" media="(min-width: 768px)">
+            <img class="bite1" src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element placeholder image">
+        </picture>
+        
     </header>
     <!-- fold -->
     <!-- special offer and main order section -->
     <main class="main-ordering" id="main" role="main">
+        <div><img class="taco-outline" src="images/taco-outlines-o.svg" alt="taco logo decoration" aria-details="taco image decoration"></div>
         <!-- promotional item front page menu and for returning customer previous/favorite orders/items or ai based suggestion section -->
         <section class="menu" role="region">
             <!-- menu heading -->
@@ -69,14 +70,13 @@
             
             <div class="promo-card six"><a href=""><img src="images/pexels-roman-odintsov-4958531.jpg" alt="Combo 6 offer 6 food image" role="img" aria-details="promo six image"><h3>Offer 6</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
         </section>
-        <div><img class="taco-outline" src="images/taco-outlines-o.svg" alt="taco logo seperator" aria-details="taco image seperator"></div>
         <!-- guess ordering section; secondary order section without the creation of an account -->
         <section class="order-container-guess" role="region">
             <p>Don't feel like creating a profile. No worries. You can still place an order as a guess and at grays tacos we treat our guess like right just like we would our own family or should I say familia.</p>
             <button class="button guess" type="button" aria-label="Place order as guess" href="#">Order</button>
         </section>
         <!-- guess ordering section; secondary order section without the creation of an account -->
-        <section class="quote" role="region">
+        <section class="quote-container" role="region">
             <p>"Best mexican food I've ever had and the workers treat you better than your own familly"</p>
             <!-- quick login and place order button -->
             <button class="button login" type="button" aria-label="Login and order" href="#">Login</button>
@@ -84,10 +84,10 @@
 
     </main>
     
-    <picture class="bite2">
+    <picture class="bite-deco2">
         <source srcset="images/bite-mark-992x992.svg" media="(min-width: 992px)">
         <source srcset="images/bite-mark-768x768.svg" media="(min-width: 768px)">
-        <img src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element">
+        <img class="bite2" src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element">
     </picture>
     
     <!-- main page footer with social media and copyright -->
