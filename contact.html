@@ -38,19 +38,17 @@
                 <li class="button-contact"><a role="button" aria-label="Contact Us Page" href="/contact.html" target="_self">Contact Us</a></li>
             </ul>
         </nav>
-        <!-- company logo -->
-        <section class="account-deal" role="region">
+        <!-- company location -->
+        <section class="location-container" role="region">
+            <div><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717628.8004803625!2d-76.95336227827475!3d45.364202235754085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231890815!5m2!1sen!2sca"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             <div><h2>CREATE ACCOUNT</h2></div>
-            <div><h2>SPECIAL OFFER</h2></div>
-            <div><img src="images/pexels-los-muertos-crew-8230019.jpg" alt="2x tacos promotion image" role="img" aria-details="create an account and get 2 for 1 promo image"></div>
+            <div><h3>We are located at: <br> 333 Dalhousie St, <br> Ottawa, ON K1N 7G1</h3></div>
+            <!-- Find location near me button -->
+            <button class="button find" type="button" aria-label="Find location near me" href="#">Find near me</button>
         </section>
-        <div class="order-container">
-            <picture>
-                <source srcset="images/bite-mark-992x992.svg" media="(min-width: 992px)">
-                <source srcset="images/bite-mark-768x768.svg" media="(min-width: 768px)">
-                <img class="bite1" src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element placeholder image">
-            </picture>
-        </div>
     </header>
     <!-- fold -->
     <!-- special offer and main order section -->
@@ -70,17 +68,24 @@
        </section>
         <div><img class="taco-outline" src="images/taco-outlines-o.svg" alt="taco logo seperator" aria-details="taco image seperator"></div>
         <!-- guess ordering section; secondary order section without the creation of an account -->
-        <section class="order-container-guess" role="region">
+        <section class="contact-container" role="region">
+            <div><h2>Contact Us</h2></div>
             <p>Don't feel like creating a profile. No worries. You can still place an order as a guess and at grays tacos we treat our guess like right just like we would our own family or should I say familia.</p>
-            <button class="button guess" type="button" aria-label="Place order as guess" href="#">Order</button>
+            <div class="message">
+                <!-- Message form -->
+                <h4>Send us a message</h4>
+                <form action="message.html" method="post">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                    <input type="button" value="Send">
+                </form>
+            </div>
+            <button class="button contact-send" type="button" aria-label="send us a message and contact us button" href="#">Send</button>
         </section>
-        <!-- guess ordering section; secondary order section without the creation of an account -->
-        <section class="quote" role="region">
-            <p>"Best mexican food I've ever had and the workers treat you better than your own familly"</p>
-            <!-- quick login and place order button -->
-            <button class="button login" type="button" aria-label="Login and order" href="#">Login</button>
-        </section>
-
     </main>
     
     <picture class="bite2">

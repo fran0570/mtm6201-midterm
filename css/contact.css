@@ -213,58 +213,72 @@ nav ul li a {
 }
 
 /* ************************************************************* */
-/*  order container
+/*  location-container
 /* ************************************************************* */
 
-.order-container {
-    position: relative;
-    background-color: var(--primary-color);
-    z-index: 1;
-}
-
-.account-deal {
+.location-container {
     padding: var(--paddings);
-    padding-bottom: 6rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* padding-bottom: 6rem; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-rows: repeat(5, 1fr); */
     /* creating a rounded buttom on section element */
     background-color: var(--primary-color);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
-.account-deal div:nth-child(1) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.account-deal div:nth-child(2) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-.account-deal div:nth-child(3) {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-}
-
-.account-deal img {
+.location-container img {
     height: 500px;
-    width: 200px;
+    width: 400px;
+    padding-bottom: 1rem;
 }
+
+.button.find {
+    width: 200px;
+    height: 100px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('../images/button-w.svg');
+    background-repeat: no-repeat;
+
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 1150px;
+    
+    /* scale transition animation on hover part A */
+    /* transform-origin: top left; */
+    transform: scale(1);
+	transition: transform 0.5s ease-out;
+}
+
+.button.find:hover {
+    /* scale transition animation on hover part B */
+    transform: scale(1.5);
+}
+
+/* .location-container div:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+}
+
+.location-container div:nth-child(2) {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.location-container div:nth-child(3) {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+} */
+
+
 
 
 /* ************************************************************* */
 /*  Menu
 /* ************************************************************* */
-
-.bite1 {
-    /* transform: translate(0, 2%); */
-    position: absolute;
-    top: -100px;
-    width: 480px;
-}
 
 .menu {
     background-color: var(--white-color);
@@ -278,7 +292,7 @@ nav ul li a {
     grid-template-rows: repeat(3, 1fr);
 
     position: absolute;
-    top: 1100px;
+    top: 1300px;
     width: 480px;
 }
 
@@ -325,7 +339,7 @@ nav ul li a {
 	}
 }
 
-.order-container-guess {
+.contact-container {
     position: relative;
     height: 400px;
     padding-top: 100px;
@@ -342,42 +356,34 @@ nav ul li a {
     background-color: var(--primary-color);
 }
 
-.order-container-guess p {
+.contact-container p {
     color: var(--secondary-color);
 }
 
-.button.guess {
-    width: 200px;
-    height: 100px;
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: url('../images/button-o.svg');
-
-    position: absolute;
-    top: 200px;
-    margin-left: 110px;
-
-    /* scale transition animation on hover part A */
-    /* transform-origin: top left; */
-    transform: scale(1);
-	transition: transform 0.5s ease-out;
+.message input[type=text] {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    color: #222;
 }
 
-.button.guess:hover {
-    /* scale transition animation on hover part B */
-    transform: scale(1.5);
+textarea {
+    box-sizing: border-box;
+    margin: 10px 0;
+    width: 100%;
+    height: 150px;
+    resize: none;
 }
 
-.quote p {
-    position: absolute;
-    top: 2650px;
-    font-size: 3rem;
-    text-align: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
+.message input[type=button] {
+    background-color: #222;
+    color: #c78c06;
+    font-size: 1.5rem;
+    padding: 5px;
 }
 
-.button.login {
+.button.contact-send {
     width: 200px;
     height: 100px;
     border: none;
@@ -388,8 +394,7 @@ nav ul li a {
     font-size: 4rem;
     text-align: center;
     position: absolute;
-    top: 2950px;
-    margin-left: 2rem;
+    top: 450px;
     
     /* scale transition animation on hover part A */
     /* transform-origin: top left; */
@@ -397,14 +402,14 @@ nav ul li a {
 	transition: transform 0.5s ease-out;
 }
 
-.button.login:hover {
+.button.contact-send:hover {
     /* scale transition animation on hover part B */
     transform: scale(1.5);
 }
 
 .bite2 {
     position: absolute;
-    top: 3100px;
+    top: 2900px;
     z-index: 4;
     transform: scaleX(-1);
     width: 480px;
@@ -424,7 +429,7 @@ footer {
     position: absolute;
 
     width: 480px;
-    top: 3300px;
+    top: 3100px;
     z-index: 5;
 }
 
