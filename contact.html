@@ -40,51 +40,90 @@
         </nav>
         <!-- company location -->
         <section class="location-container" role="region">
-            <div><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717628.8004803625!2d-76.95336227827475!3d45.364202235754085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231890815!5m2!1sen!2sca"
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717628.8004803625!2d-76.95336227827475!3d45.364202235754085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231890815!5m2!1sen!2sca"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-            <div><h2>CREATE ACCOUNT</h2></div>
-            <div><h3>We are located at: <br> 333 Dalhousie St, <br> Ottawa, ON K1N 7G1</h3></div>
+            <!-- Add Schema to restaurant location/address -->
+            <div><h2>OUR LOCATIONS</h2></div>
+            <div><p itemscope="address" itemtype="https://schema.org/PostalAddress"><h3>
+                <span>Are main location is at:</span><br>
+                <span itemprop="streetAddress">333 Dalhousie St,</span><br>
+                <span itemprop="addressLocality">Ottawa, </span>ON<br>
+                <span itemprop="addressCountry">Canada</span>
+                <span intemprop="postalCode">K1N 7G1</span></h3></p>
+            </div>
             <!-- Find location near me button -->
             <button class="button find" type="button" aria-label="Find location near me" href="#">Find near me</button>
+            <div><img class="taco-outline" src="images/taco-outlines-w.svg" alt="taco logo decoration" aria-details="taco image decoration"></div>
         </section>
     </header>
     <!-- fold -->
-    <!-- special offer and main order section -->
+
     <main class="main-ordering" id="main" role="main">
-        <!-- promotional item front page menu and for returning customer previous/favorite orders/items or ai based suggestion section -->
-        <section class="menu" role="region">
-            <!-- menu heading -->
-            <div><h2>Menu</h2></div>
-            <!-- promo card 1 -->
-            <div class="promo-card one"><a href=""><img src="images/pexels-roman-odintsov-4958425.jpg" alt="Combo 1 offer 1 food image" role="img" aria-details="promo one image"><h3>Offer 1</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
-            <!-- promo card 2 -->
-            <div class="promo-card two"><a href=""><img src="images/pexels-roman-odintsov-4958520.jpg" alt="Combo 2 offer 2 food image" role="img" aria-details="promo two image"><h3>Offer 2</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
-            <!-- promo card 3 -->
-            <div class="promo-card three"><a href=""><img src="images/pexels-roman-odintsov-4958526.jpg" alt="Combo 3 offer 3 food image" role="img" aria-details="promo three image"><h3>Offer 3</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
-            <!-- promo card 4 -->
-            <div class="promo-card four"><a href=""><img src="images/pexels-roman-odintsov-4958531.jpg" alt="Combo 4 offer 4 food image" role="img" aria-details="promo four image"><h3>Offer 4</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam. Temporibus numquam unde facilis expedita, iure illum, tempora fugit illo.</p></a></div>
+        <!-- personnel meet the team section -->
+        <section class="team" role="region">
+            <!-- team heading -->
+            <div><h2>team</h2></div>
+            <!-- employee card 1 -->
+            <div class="employee-card one"><img src="images/pexels-roman-odintsov-4958425.jpg" alt=" John Doe employee photo portrait" role="img" aria-details="John Doe employee photo">
+                <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name"><h3>John Doe</h3></li>
+                    <li itemprop="jobTitle">Title: CEO</li>
+                    <li itemprop="email">Email: johnjoe@jambox.ca</li>
+                    <li itemprop="telephone">Phone: 613-000-0000</li>
+                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam.</p></li>
+                </ul>
+            </div>
+            <!-- employee card 2 -->
+            <div class="employee-card two"><img src="images/pexels-roman-odintsov-4958425.jpg" alt=" John Doe employee photo portrait" role="img" aria-details="John Doe employee photo">
+                <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name"><h3>John Doe</h3></li>
+                    <li itemprop="jobTitle">Title: CEO</li>
+                    <li itemprop="email">Email: johnjoe@jambox.ca</li>
+                    <li itemprop="telephone">Phone: 613-000-0000</li>
+                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam.</p></li>
+                </ul>
+            </div>
+            <!-- employee card 3 -->
+            <div class="employee-card three"><img src="images/pexels-roman-odintsov-4958425.jpg" alt=" John Doe employee photo portrait" role="img" aria-details="John Doe employee photo">
+                <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name"><h3>John Doe</h3></li>
+                    <li itemprop="jobTitle">Title: CEO</li>
+                    <li itemprop="email">Email: johnjoe@jambox.ca</li>
+                    <li itemprop="telephone">Phone: 613-000-0000</li>
+                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam.</p></li>
+                </ul>
+            </div>
+            <!-- employee card 4 -->
+            <div class="employee-card four"><img src="images/pexels-roman-odintsov-4958425.jpg" alt=" John Doe employee photo portrait" role="img" aria-details="John Doe employee photo">
+                <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name"><h3>John Doe</h3></li>
+                    <li itemprop="jobTitle">Title: CEO</li>
+                    <li itemprop="email">Email: johnjoe@jambox.ca</li>
+                    <li itemprop="telephone">Phone: 613-000-0000</li>
+                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat deserunt iure facere beatae neque explicabo totam.</p></li>
+                </ul>
+            </div>
        </section>
-        <div><img class="taco-outline" src="images/taco-outlines-o.svg" alt="taco logo seperator" aria-details="taco image seperator"></div>
-        <!-- guess ordering section; secondary order section without the creation of an account -->
+        
+        <!-- contact us section -->
         <section class="contact-container" role="region">
             <div><h2>Contact Us</h2></div>
             <p>Don't feel like creating a profile. No worries. You can still place an order as a guess and at grays tacos we treat our guess like right just like we would our own family or should I say familia.</p>
             <div class="message">
                 <!-- Message form -->
+                <!-- Add label for an input filed helping accessibility ie.: hit area  -->
                 <h4>Send us a message</h4>
                 <form action="message.html" method="post">
                     <label for="fullname">Full Name</label>
-                    <input type="text" name="fullname" id="fullname" required>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" required>
+                    <input type="text" name="email" id="email" placeholder="Email" required>
                     <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
+                    <textarea name="message" id="message" placeholder=" Your message"></textarea>
                     <input type="button" value="Send">
                 </form>
             </div>
-            <button class="button contact-send" type="button" aria-label="send us a message and contact us button" href="#">Send</button>
         </section>
     </main>
     
@@ -94,10 +133,17 @@
         <img src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element">
     </picture>
     
-    <!-- main page footer with social media and copyright -->
+    <!-- main page footer with address, social media, and copyright -->
     <footer role="contentinfo">
         <div><h2>gray's taco</h2></div>
-        <div><p>We are located at: <br> 333 Dalhousie St, <br> Ottawa, ON K1N 7G1 <br> &copy; 2023 gray's tacos </p></div>
+        <!-- Add Schema improving the way search engines read and represent your page -->
+        <div><p itemscope="address" itemtype="https://schema.org/PostalAddress">
+            <span>We are located at:</span><br>
+            <span itemprop="streetAddress">333 Dalhousie St,</span><br>
+            <span itemprop="addressLocality">Ottawa, </span>ON<br>
+            <span itemprop="addressCountry">Canada</span>
+            <span intemprop="postalCode">K1N 7G1</span><br> &copy; 2023 gray's tacos </p></div>
+        
         <div class="social-link">
             <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" role="link" aria-label="facebook link"></i></a>
             <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" role="link" aria-label="instagram link"></i></a>

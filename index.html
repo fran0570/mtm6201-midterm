@@ -92,10 +92,17 @@
         <img src="images/bite-mark.svg" alt="bite mark vector drawing visual not interative design element">
     </picture>
     
-    <!-- main page footer with social media and copyright -->
+    <!-- main page footer with address, social media, and copyright -->
     <footer role="contentinfo">
         <div><h2>gray's taco</h2></div>
-        <div><p>We are located at: <br> 333 Dalhousie St, <br> Ottawa, ON K1N 7G1 <br> &copy; 2023 gray's tacos </p></div>
+        <!-- Add Schema improving the way search engines read and represent your page -->
+        <div><p itemscope="address" itemtype="https://schema.org/PostalAddress">
+            <span>We are located at:</span><br>
+            <span itemprop="streetAddress">333 Dalhousie St,</span><br>
+            <span itemprop="addressLocality">Ottawa, </span>ON<br>
+            <span itemprop="addressCountry">Canada</span>
+            <span intemprop="postalCode">K1N 7G1</span><br> &copy; 2023 gray's tacos </p></div>
+        
         <div class="social-link">
             <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" role="link" aria-label="facebook link"></i></a>
             <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" role="link" aria-label="instagram link"></i></a>
@@ -106,7 +113,5 @@
             <a href="https://www.pinterest.ca/"><i class="fa fa-pinterest-square" role="link" aria-label="pinterest link"></i></a>
             <a href="https://www.flickr.com/"><i class="fa fa-flickr" role="link" aria-label="flickr link"></i></a>
         </div>
-
-    </footer>
 </body>
 </html>

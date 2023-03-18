@@ -359,7 +359,7 @@ nav ul li a {
     border: none;
     background-color: rgba(0, 0, 0, 0);
     background-image: url('../images/button-o.svg');
-bite-deco1
+
     position: absolute;
     top: 200px;
     margin-left: 110px;
@@ -523,65 +523,50 @@ footer .social-link {
 @media screen and (min-width: 992px) {
 
     body {
-        width: 768px;
+        width: 992px;
     }
 
-    .account-deal img {
+    /* .account-deal img {
         height: 700px;
         width: 400px;
-    }
+    } */
     
     .bite1 {
-        top: 5px;
-        width: 768px;
-    }
-
-    .taco-outline {
-        top: 1400px;
-        margin-left: 200px;
+        width: 992px;
     }
 
     .menu {
-        top: 1400px;
-        width: 768px;
+        width: 992px;
     }
 
     .order-container-guess {
-        top: 2400px;
-        width: 768px;
+        width: 992px;
     }
 
     .order-container-guess p {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
     .button.guess {
         position: absolute;
-        top: 200px;
-        margin-left: 245px;
-    }
-
-    .quote-container {
-        top: 2900px;
+        top: 240px;
+        margin-left: 340px;
     }
     
     .quote-container p {
-        margin-right: 3rem;
+        margin-right: 13rem;
     }
     
     .button.login {  
         position: absolute;
-        top: 250px;
-        margin-left: 300px;
+        margin-left: 400px;
     }
 
     .bite2 {
-        top: 3300px;
-        width: 768px;
+        width: 992px;
     }
     
-    footer {
-        top: 3500px;    
-        width: 768px;
+    footer {    
+        width: 992px;
     }
 }
