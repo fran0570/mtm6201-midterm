@@ -151,6 +151,7 @@ nav ul li {
 
 nav ul li a {
     color: var(--white-color);
+    text-decoration: none;
 }
 
 .button-home {
@@ -479,6 +480,10 @@ nav ul li a {
 
 .promo-card img {
     width: 150px;
+}
+
+.promo-card a {
+    text-decoration: none;
 }
 
 .bite2 {
