@@ -479,7 +479,7 @@ nav ul li a {
 }
 
 .promo-card img {
-    width: 150px;
+    width: 200px;
 }
 
 .promo-card a {
@@ -564,7 +564,11 @@ footer .social-link {
         top: 2550px;
         width: 768px;
     }
-    
+
+    .promo-card img {
+        width: 300px;
+    }
+
     .bite2 {
         top: 3200px;
         width: 768px;
@@ -611,6 +615,10 @@ footer .social-link {
     .menu {
         top: 2750px;
         width: 992px;
+    }
+
+    .promo-card img {
+        width: 400px;
     }
     
     .bite2 {
