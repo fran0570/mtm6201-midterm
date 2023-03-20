@@ -30,16 +30,16 @@
 
 /* loading fonts */
 @font-face {
-    font-family: "Athena Rustic"; src: url('/fonts/athena-rustic-font/Athena Rustic.ttf');
+    font-family: "Athena Rustic"; src: url('mtm6201-midterm/fonts/athena-rustic-font/Athena Rustic.ttf');
 }
 @font-face {
-    font-family: "Bite _ Bullet"; src: url('/fonts/bite-the-bullet/Bite _ Bullet.ttf');
+    font-family: "Bite _ Bullet"; src: url('mtm6201-midterm/fonts/bite-the-bullet/Bite _ Bullet.ttf');
 }
 @font-face {
-    font-family: "IndieFlower-Regular"; src: url('/fonts/Indie_Flower/IndieFlower-Regular.ttf');
+    font-family: "IndieFlower-Regular"; src: url('mtm6201-midterm/fonts/Indie_Flower/IndieFlower-Regular.ttf');
 }
 @font-face {
-    font-family: "Rustic Love Tattoo"; src: url('/fonts/rustic_love_tattoo/Rustic Love Tattoo.otf');
+    font-family: "Rustic Love Tattoo"; src: url('mtm6201-midterm/fonts/rustic_love_tattoo/Rustic Love Tattoo.otf');
 }
 
 /* Main styling for entire site */
