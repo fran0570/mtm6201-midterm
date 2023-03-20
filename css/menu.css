@@ -46,6 +46,7 @@
     /* costum property/variable */
     /* colors */
     --primary-color: #ffba59;
+    --primary-color-light: #ffd9a3;
     --secondary-color: #3d1c39;
     --highlight-color:#69c0af;
     --white-color: white;
@@ -78,7 +79,7 @@ body {
     margin: auto;
     width: 480px;
     color: #3d1c39;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-light);
 }
 
 h1 {
@@ -229,10 +230,11 @@ nav ul li a {
 
 .account-deal {
     padding: var(--paddings);
-    padding-bottom: 6rem;
+    padding-bottom: 12rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    transform: translate( 0, -2%);
     /* creating a rounded buttom on section element */
     background-color: var(--primary-color);
     border-bottom-left-radius: 25px;
@@ -271,7 +273,7 @@ nav ul li a {
 
 .bite1 {
     position: absolute;
-    top: -100px;
+    top: -200px;
     width: 480px;
 }
 
@@ -389,7 +391,7 @@ nav ul li a {
     font-size: 3rem;
     text-align: center;
     margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
 .button.login {
@@ -463,13 +465,17 @@ footer .social-link {
         width: 768px;
     }
 
+    .account-deal {
+        padding-bottom: 16rem;
+    }
+
     .account-deal img {
         height: 700px;
         width: 400px;
     }
     
     .bite1 {
-        top: 5px;
+        top: -200px;
         width: 768px;
     }
 
@@ -507,7 +513,7 @@ footer .social-link {
     }
     
     .quote-container p {
-        margin-right: 3rem;
+        margin-right: 5rem;
     }
     
     .button.login {  
@@ -571,11 +577,12 @@ footer .social-link {
     }
 
     .quote-container p {
-        margin-right: 13rem;
+        margin-right: 24rem;
     }
     
     .button.login {  
         position: absolute;
+        margin-left: 250px;
     }
 
     .bite2 {

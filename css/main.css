@@ -44,6 +44,7 @@
     /* costum property/variable */
     /* colors */
     --primary-color: #ffba59;
+    --primary-color-light: #ffd9a3;
     --secondary-color: #3d1c39;
     --highlight-color:#69c0af;
     --white-color: white;
@@ -76,7 +77,7 @@ body {
     margin: auto;
     width: 480px;
     color: #3d1c39;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-light);
 }
 
 h1 {
@@ -232,7 +233,9 @@ nav ul li a {
 }
 
 .logo-container {
+    transform: translate( 0, -2%);
     height: 600px;
+    background-color: var(--primary-color);
 }
 
 .logo-container .company-logo.frame1 {

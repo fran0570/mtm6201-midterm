@@ -44,6 +44,7 @@
     /* costum property/variable */
     /* colors */
     --primary-color: #ffba59;
+    --primary-color-light: #ffd9a3;
     --secondary-color: #3d1c39;
     --highlight-color:#69c0af;
     --white-color: white;
@@ -76,7 +77,7 @@ body {
     margin: auto;
     width: 480px;
     color: #3d1c39;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-light);
 }
 
 h1 {
@@ -226,7 +227,9 @@ nav ul li a {
 /* ************************************************************* */
 
 .location-container {
+    transform: translate( 0, -2%);
     padding: var(--paddings);
+    padding-bottom: 8rem;
     /* padding-bottom: 6rem; */
     /* display: grid; */
     /* grid-template-columns: repeat(2, 1fr); */
@@ -284,9 +287,8 @@ nav ul li a {
 
 .taco-outline {
     position: absolute;
-    top: 1050px;
     margin-left: 250px;
-
+    top: 700px;
     width: 10rem;
     z-index: 2;
 
@@ -325,7 +327,7 @@ nav ul li a {
     grid-template-rows: repeat(3, 1fr);
 
     position: absolute;
-    top: 1300px;
+    top: 1200px;
     width: 480px;
 }
 
@@ -351,12 +353,12 @@ nav ul li a {
 
 .contact-container {
     position: relative;
-    height: 400px;
+    height: 1000px;
     padding: var(--paddings);
     border-radius: 25px;
 
     position: absolute;
-    top: 2700px;
+    top: 2600px;
     width: 480px;
     z-index: 4;
 
@@ -408,7 +410,7 @@ textarea {
 
 .bite2 {
     position: absolute;
-    top: 3400px;
+    top: 3300px;
     z-index: 4;
     transform: scaleX(-1);
     width: 480px;
@@ -428,7 +430,7 @@ footer {
     position: absolute;
 
     width: 480px;
-    top: 3600px;
+    top: 3500px;
     z-index: 5;
 }
 
@@ -466,12 +468,12 @@ footer .social-link {
     }
     
     .taco-outline {
-        top: 1150px;
+        top: 850px;
         margin-left: 400px;
     }
 
     .team {
-        top: 1550px;
+        top: 1450px;
         width: 768px;
     }
 
