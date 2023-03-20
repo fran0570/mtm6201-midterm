@@ -5,31 +5,6 @@
 /* ************************************************************* */
 /*  NOTES
     -Colors: orange = #ffba59, purple = , teal= #69c0af, and white
-    CHECK COLORS WITH WAVES!!!!!!!!!!!!!!!!!!
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-    TODO
-    TODO
-    TODO
-    TODO
-
-    1- fix the media query for this menu page done
-    2- rename tag html elements with proper menu page names and remove unnecessairy
-    css styling (cleanup code) done
-
-    3- repeat 1 and 2 for the contact page done
-    4- make images web efficient done
-    4-- fix content put appropriate text and image
-    4--- make images RESPONSIVE IMAGE (resolution size)
-    -check color contrast to make sure fonts as fix issues
-    -ANIMATION
-    -FIX FONT NOT LOADING SO THEY CAN HAVE HIGHER CONTRAST AS NEEDED FOR ACCESSIBILITY
-
-    TODO
-    TODO
-    TODO
-    TODO
-
     -Mobile first styling approche with responsive design with media queries
     -CSS should be valid and well-formatted
     -Comments should be provided for explaining
@@ -55,10 +30,16 @@
 
 /* loading fonts */
 @font-face {
-    font-family: Athena Rustic; src: url('fonts/athena-rustic-font/Athena Rustic.ttf'); /* doesn't work */
-    font-family: Bite _ Bullet; src: url('fonts/bite-the-bullet/Bite _ Bullet.ttf'); /* GOOD */
-    font-family: IndieFlower-Regular; src: url('fonts/Indie_Flower/IndieFlower-Regular.ttf'); /* doesn't work */
-    font-family: Rustic Love Tattoo; src: url('fonts/rustic_love_tattoo/Rustic Love Tattoo.otf'); /* GOOD */
+    font-family: "Athena Rustic"; src: url('/fonts/athena-rustic-font/Athena Rustic.ttf');
+}
+@font-face {
+    font-family: "Bite _ Bullet"; src: url('/fonts/bite-the-bullet/Bite _ Bullet.ttf');
+}
+@font-face {
+    font-family: "IndieFlower-Regular"; src: url('/fonts/Indie_Flower/IndieFlower-Regular.ttf');
+}
+@font-face {
+    font-family: "Rustic Love Tattoo"; src: url('/fonts/rustic_love_tattoo/Rustic Love Tattoo.otf');
 }
 
 /* Main styling for entire site */
@@ -73,7 +54,7 @@ html {
 }
 
 body {
-    font-family: Rustic Love Tattoo;
+    font-family: 'Athena Rustic';
     margin: auto;
     width: 480px;
     color: #3d1c39;
@@ -81,38 +62,33 @@ body {
 }
 
 h1 {
-    /* TEMP */
-    font-family: Bite _ Bullet;
+    font-family: 'Athena Rustic';
     font-size: 5rem;
 }
 
 h2 {
-    /* TEMP */
-    font-family: Bite _ Bullet;
+    font-family: 'Athena Rustic';
     font-size: 5rem;
 }
 
 h3 {
-    /* TEMP */
-    font-family: Bite _ Bullet;
+    font-family: 'Athena Rustic';
     font-size: 2rem;
     margin-top: 1rem;
 }
 
 p {
-    /* TEMP */
-    font-family: Rustic Love Tattoo;
+    font-family: 'Rustic Love Tattoo';
     font-size: 1.1rem;
 }
 
 button {
-    font-family: Bite _ Bullet;
+    font-family: 'Bite _ Bullet';
     font-size: 3rem;
 }
 
 a {
-    /* TEMP */
-    font-family: Bite _ Bullet;
+    font-family: 'Athena Rustic';
     font-size: 2rem;
 }
 
@@ -129,11 +105,11 @@ a {
 .access-skip-links a {
     position: absolute;
     top: -3em;
-    /* Reasonable Colors (7:1) color shade contrast ratio */
-    background-color: var(--color-powder-6);
-    color: var(--color-pink-2);
+    background-color: var(--white-color);
+    color: var(--secondary-color);
     padding: .5em 1em;
     font-weight: bold;
+    z-index: 99;
 }
   
 .access-skip-links a:focus {
@@ -143,7 +119,7 @@ a {
 
 /* ************************************************************* */
 /*  Navigation Bar Styling
-    Creating one column of buttons with colour change hover state*/
+    Creating one column of buttons */
 /* ************************************************************* */
 
 nav ul {
@@ -163,8 +139,23 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li:hover a {
+    text-decoration: underline;
+}
+
+nav ul li:nth-child(1) a {
+    text-decoration: underline;
+}
+
+nav ul li:nth-child(2) a {
+    color: var(--secondary-color);
+}
+
+nav ul li:nth-child(4) a {
+    color: var(--secondary-color);
+}
+
 .button-home {
-    /* opacity: .5; */
     grid-column: 1; 
     grid-row: 1 / 5;
     background-color: var(--secondary-color);
@@ -180,7 +171,6 @@ nav ul li a {
 
 .button-menu {
     background-color: var(--primary-color);
-    /* opacity: .5; */
     grid-column: 1;
     grid-row: 2 / 5;
     z-index: 2;
@@ -209,7 +199,6 @@ nav ul li a {
 
 .button-contact {
     background-color: var(--primary-color);
-    /* opacity: .5; */
     grid-column: 1;
     grid-row: 4 / 5;
     z-index: 4;
@@ -240,36 +229,28 @@ nav ul li a {
 
 .logo-container .company-logo.frame1 {
     z-index: 0;
-    /* animation: name | duration | timing-function | delay | iteration-count |
-	direction | fill-mode */
+    /* animation: name | duration | timing-function | delay | iteration-count |	direction | fill-mode */
 	animation: eating1 2s ease-in-out 5s infinite normal forwards;
 }
 .logo-container .company-logo.frame2 {
-    /* position: relative; */
     transform: translate( 0, -100%);
     z-index: -1;
-    /* animation: name | duration | timing-function | delay | iteration-count |
-	direction | fill-mode */
+    /* animation: name | duration | timing-function | delay | iteration-count |	direction | fill-mode */
 	animation: eating2 2s ease-in-out 5s infinite normal forwards;
 }
 .logo-container .company-logo.frame3 {
-    /* position: relative; */
     transform: translate( 0, -200%);
     z-index: -2;
-    /* animation: name | duration | timing-function | delay | iteration-count |
-	direction | fill-mode */
+    /* animation: name | duration | timing-function | delay | iteration-count |	direction | fill-mode */
 	animation: eating3 2s ease-in-out 5s infinite normal forwards;
 }
 .logo-container .company-logo.frame4 {
-    /* position: relative; */
     transform: translate( 0, -300%);
     z-index: -3;
-    /* animation: name | duration | timing-function | delay | iteration-count |
-	direction | fill-mode */
+    /* animation: name | duration | timing-function | delay | iteration-count |	direction | fill-mode */
 	animation: eating4 2s ease-in-out 5s infinite normal forwards;
 }
 @keyframes eating1 {
-	/* this method gives us 4 keyframes */
 	0% {
 		visibility: visible;
 	}
@@ -284,7 +265,6 @@ nav ul li a {
 	}
 }
 @keyframes eating2 {
-	/* this method gives us 4 keyframes */
 	0% {
 		visibility: hidden;
 	}
@@ -299,7 +279,6 @@ nav ul li a {
 	}
 }
 @keyframes eating3 {
-	/* this method gives us 4 keyframes */
 	0% {
 		visibility: hidden;
 	}
@@ -314,7 +293,6 @@ nav ul li a {
 	}
 }
 @keyframes eating4 {
-	/* this method gives us 4 keyframes */
 	0% {
 		visibility: hidden;
 	}
@@ -328,8 +306,8 @@ nav ul li a {
 		visibility: visible;
 	}
 }
+
 .bite1 {
-    /* transform: translate(0, 2%); */
     position: absolute;
     top: -238px;
     width: 480px;
@@ -347,7 +325,6 @@ nav ul li a {
     margin-left: 140px;
     
     /* scale transition animation on hover part A */
-    /* transform-origin: top left; */
     transform: scale(1);
 	transition: transform 0.5s ease-out;
 }
@@ -395,17 +372,13 @@ nav ul li a {
     margin-left: 160px;
 
     width: 10rem;
-    /* position: relative;
-    transform: translate( 100%, -50%); */
     z-index: 2;
 
-    /* animation: name | duration | timing-function | delay | iteration-count |
-	direction | fill-mode */
+    /* animation: name | duration | timing-function | delay | iteration-count |	direction | fill-mode */
 	animation: shake 2s ease-in-out 5s infinite normal forwards;
 }
 
 @keyframes shake {
-	/* this method gives us 4 keyframes */
 	0% {
 		transform: rotate(0deg);
 	}
@@ -425,9 +398,6 @@ nav ul li a {
     padding-left: var(--paddings);
     padding-right: var(--paddings);
 
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%; */
     transform: translate(0, -25px);
     z-index: -1;
 
@@ -450,7 +420,6 @@ nav ul li a {
     margin-left: 110px;
 
     /* scale transition animation on hover part A */
-    /* transform-origin: top left; */
     transform: scale(1);
 	transition: transform 0.5s ease-out;
 }
@@ -465,7 +434,6 @@ nav ul li a {
     background-color: var(--primary-color);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    /* transform: translate(0, -40%); */
     z-index: 3;
     padding-top: 4rem;
     padding-left: var(--paddings);
@@ -484,7 +452,6 @@ nav ul li a {
 }
 
 .promo-card {
-    /* margin: var(--margins); */
     margin-top: 2rem;
     transform: translate(0, -90%);
 }
@@ -509,7 +476,6 @@ footer {
     
     padding-left: var(--paddings);
     padding-bottom: var(--paddings);
-    /* padding-bottom: 4rem; */
     background-color: var(--white-color);
 
     display: grid;
@@ -536,7 +502,7 @@ footer .social-link {
 /* ************************************************************* */
 /* Media Query 
    No specific media queries and breakpoints are required but 
-   should be used as necessary */
+   should be used as necessary will us 768px, and 992px */
 /* ************************************************************* */
 /* Medium Screens (tablets) */
 @media screen and (min-width: 768px) {

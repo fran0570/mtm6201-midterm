@@ -5,31 +5,6 @@
 /* ************************************************************* */
 /*  NOTES
     -Colors: orange = #ffba59, purple = , teal= #69c0af, and white
-    CHECK COLORS WITH WAVES!!!!!!!!!!!!!!!!!!
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-    TODO
-    TODO
-    TODO
-    TODO
-
-    1- fix the media query for this menu page
-    2- rename tag html elements with proper menu page names and remove unnecessairy
-    css styling (cleanup code)
-
-    3- repeat 1 and 2 for the contact page
-    4- make images web efficient
-    4-- fix content put appropriate text and image
-    4--- make images RESPONSIVE IMAGE (resolution size)
-    -check color contrast to make sure fonts as fix issues
-    -ANIMATION
-    -FIX FONT NOT LOADING SO THEY CAN HAVE HIGHER CONTRAST AS NEEDED FOR ACCESSIBILITY
-
-    TODO
-    TODO
-    TODO
-    TODO
-
     -Mobile first styling approche with responsive design with media queries
     -CSS should be valid and well-formatted
     -Comments should be provided for explaining
@@ -55,10 +30,16 @@
 
 /* loading fonts */
 @font-face {
-    font-family: Athena Rustic; src: url('fonts/athena-rustic-font/Athena Rustic.ttf'); /* doesn't work */
-    font-family: Bite _ Bullet; src: url('fonts/bite-the-bullet/Bite _ Bullet.ttf'); /* GOOD */
-    font-family: IndieFlower-Regular; src: url('fonts/Indie_Flower/IndieFlower-Regular.ttf'); /* doesn't work */
-    font-family: Rustic Love Tattoo; src: url('fonts/rustic_love_tattoo/Rustic Love Tattoo.otf'); /* GOOD */
+    font-family: "Athena Rustic"; src: url('/fonts/athena-rustic-font/Athena Rustic.ttf');
+}
+@font-face {
+    font-family: "Bite _ Bullet"; src: url('/fonts/bite-the-bullet/Bite _ Bullet.ttf');
+}
+@font-face {
+    font-family: "IndieFlower-Regular"; src: url('/fonts/Indie_Flower/IndieFlower-Regular.ttf');
+}
+@font-face {
+    font-family: "Rustic Love Tattoo"; src: url('/fonts/rustic_love_tattoo/Rustic Love Tattoo.otf');
 }
 
 /* Main styling for entire site */
@@ -73,7 +54,7 @@ html {
 }
 
 body {
-    font-family: Rustic Love Tattoo;
+    font-family: 'Athena Rustic';
     margin: auto;
     width: 480px;
     color: #3d1c39;
@@ -81,38 +62,33 @@ body {
 }
 
 h1 {
-    /* TEMP */
-    font-family: Bite _ Bullet;
+    font-family: 'Athena Rustic';
     font-size: 5rem;
 }
 
 h2 {
-    /* TEMP */
-    font-family: Bite _ Bullet;
+    font-family: 'Athena Rustic';
     font-size: 5rem;
 }
 
 h3 {
-    /* TEMP */
-    font-family: Bite _ Bullet;
+    font-family: 'Athena Rustic';
     font-size: 2rem;
     margin-top: 1rem;
 }
 
 p {
-    /* TEMP */
-    font-family: Rustic Love Tattoo;
+    font-family: 'Rustic Love Tattoo';
     font-size: 1.1rem;
 }
 
 button {
-    font-family: Bite _ Bullet;
+    font-family: 'Bite _ Bullet';
     font-size: 3rem;
 }
 
 a {
-    /* TEMP */
-    font-family: Bite _ Bullet;
+    font-family: 'Athena Rustic';
     font-size: 2rem;
 }
 
@@ -129,11 +105,11 @@ a {
 .access-skip-links a {
     position: absolute;
     top: -3em;
-    /* Reasonable Colors (7:1) color shade contrast ratio */
-    background-color: var(--color-powder-6);
-    color: var(--color-pink-2);
+    background-color: var(--white-color);
+    color: var(--secondary-color);
     padding: .5em 1em;
     font-weight: bold;
+    z-index: 99;
 }
   
 .access-skip-links a:focus {
@@ -143,7 +119,7 @@ a {
 
 /* ************************************************************* */
 /*  Navigation Bar Styling
-    Creating one column of buttons with colour change hover state*/
+    Creating one column of buttons */
 /* ************************************************************* */
 
 nav ul {
@@ -163,8 +139,20 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li:hover a {
+    text-decoration: underline;
+}
+
+nav ul li:nth-child(2) a {
+    color: var(--secondary-color);
+}
+
+nav ul li:nth-child(4) a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 .button-home {
-    /* opacity: .5; */
     grid-column: 1; 
     grid-row: 1 / 5;
     background-color: var(--secondary-color);
@@ -180,7 +168,6 @@ nav ul li a {
 
 .button-menu {
     background-color: var(--primary-color);
-    /* opacity: .5; */
     grid-column: 1;
     grid-row: 2 / 5;
     z-index: 2;
@@ -209,7 +196,6 @@ nav ul li a {
 
 .button-contact {
     background-color: var(--primary-color);
-    /* opacity: .5; */
     grid-column: 1;
     grid-row: 4 / 5;
     z-index: 4;
@@ -229,12 +215,6 @@ nav ul li a {
 .location-container {
     transform: translate( 0, -2%);
     padding: var(--paddings);
-    padding-bottom: 8rem;
-    /* padding-bottom: 6rem; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* grid-template-rows: repeat(5, 1fr); */
-    /* creating a rounded buttom on section element */
     background-color: var(--primary-color);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -260,7 +240,6 @@ nav ul li a {
     top: 1150px;
     
     /* scale transition animation on hover part A */
-    /* transform-origin: top left; */
     transform: scale(1);
 	transition: transform 0.5s ease-out;
 }
@@ -270,35 +249,18 @@ nav ul li a {
     transform: scale(1.5);
 }
 
-/* .location-container div:nth-child(1) {
-    grid-column: 1 / 3;
-    grid-row: 1 / 4;
-}
-
-.location-container div:nth-child(2) {
-    grid-column: 1 / 3;
-    grid-row: 4 / 5;
-}
-
-.location-container div:nth-child(3) {
-    grid-column: 1 / 3;
-    grid-row: 5 / 6;
-} */
-
 .taco-outline {
     position: absolute;
-    margin-left: 250px;
-    top: 700px;
+    margin-left: 260px;
+    top: 720px;
     width: 10rem;
     z-index: 2;
 
-    /* animation: name | duration | timing-function | delay | iteration-count |
-	direction | fill-mode */
+    /* animation: name | duration | timing-function | delay | iteration-count |	direction | fill-mode */
 	animation: shake 2s ease-in-out 5s infinite normal forwards;
 }
 
 @keyframes shake {
-	/* this method gives us 4 keyframes */
 	0% {
 		transform: rotate(0deg);
 	}
@@ -318,7 +280,6 @@ nav ul li a {
 .team {
     background-color: var(--white-color);
     border-radius: 25px;
-    /* transform: translate(0, -40%); */
     z-index: 3;
     padding-top: 4rem;
     padding-left: var(--paddings);
@@ -337,7 +298,6 @@ nav ul li a {
 }
 
 .employee-card {
-    /* margin: var(--margins); */
     margin-top: 2rem;
     transform: translate(0, -90%);
 }
@@ -420,7 +380,6 @@ footer {
     
     padding-left: var(--paddings);
     padding-bottom: var(--paddings);
-    /* padding-bottom: 4rem; */
     background-color: var(--white-color);
 
     display: grid;
@@ -447,7 +406,7 @@ footer .social-link {
 /* ************************************************************* */
 /* Media Query 
    No specific media queries and breakpoints are required but 
-   should be used as necessary */
+   should be used as necessary will us 768px, and 992px*/
 /* ************************************************************* */
 /* Medium Screens (tablets) */
 @media screen and (min-width: 768px) {
@@ -511,8 +470,8 @@ footer .social-link {
     }
 
     .taco-outline {
-        top: 1450px;
-        margin-left: 380px;
+        top: 1050px;
+        margin-left: 400px;
     }
 
     .team {
