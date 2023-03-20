@@ -356,7 +356,7 @@ nav ul li a {
     border-radius: 25px;
 
     position: absolute;
-    top: 2100px;
+    top: 2700px;
     width: 480px;
     z-index: 4;
 
@@ -408,7 +408,7 @@ textarea {
 
 .bite2 {
     position: absolute;
-    top: 2800px;
+    top: 3400px;
     z-index: 4;
     transform: scaleX(-1);
     width: 480px;
@@ -428,7 +428,7 @@ footer {
     position: absolute;
 
     width: 480px;
-    top: 3000px;
+    top: 3600px;
     z-index: 5;
 }
 
@@ -476,17 +476,17 @@ footer .social-link {
     }
 
     .contact-container {
-        top: 2400px;
+        top: 2700px;
         width: 768px;
     }
     
     .bite2 {
-        top: 3100px;
+        top: 3400px;
         width: 768px;
     }
     
     footer {
-        top: 3300px;    
+        top: 3600px;    
         width: 768px;
     }
 }
@@ -519,17 +519,17 @@ footer .social-link {
     }
     
     .contact-container {
-        top: 2400px;
+        top: 2750px;
         width: 992px;
     }
 
     .bite2 {
-        top: 3000px;
+        top: 3400px;
         width: 992px;
     }
     
     footer {
-        top: 3200px;    
+        top: 3600px;    
         width: 992px;
     }
 }

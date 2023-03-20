@@ -13,12 +13,12 @@
     TODO
     TODO
 
-    1- fix the media query for this menu page
+    1- fix the media query for this menu page done
     2- rename tag html elements with proper menu page names and remove unnecessairy
-    css styling (cleanup code)
+    css styling (cleanup code) done
 
-    3- repeat 1 and 2 for the contact page
-    4- make images web efficient
+    3- repeat 1 and 2 for the contact page done
+    4- make images web efficient done
     4-- fix content put appropriate text and image
     4--- make images RESPONSIVE IMAGE (resolution size)
     -check color contrast to make sure fonts as fix issues
@@ -496,7 +496,7 @@ nav ul li a {
 
 .bite2 {
     position: absolute;
-    top: 2800px;
+    top: 2850px;
     z-index: 4;
     transform: scaleX(-1);
     width: 480px;
@@ -516,7 +516,7 @@ footer {
     position: absolute;
 
     width: 480px;
-    top: 3000px;
+    top: 3050px;
     z-index: 5;
 }
 
@@ -578,12 +578,12 @@ footer .social-link {
     }
 
     .bite2 {
-        top: 3200px;
+        top: 3400px;
         width: 768px;
     }
     
     footer {
-        top: 3400px;    
+        top: 3600px;    
         width: 768px;
     }
 }
@@ -630,12 +630,12 @@ footer .social-link {
     }
     
     .bite2 {
-        top: 3400px;
+        top: 3700px;
         width: 992px;
     }
     
     footer {
-        top: 3600px;    
+        top: 3900px;    
         width: 992px;
     }
 }

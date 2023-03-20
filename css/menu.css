@@ -483,8 +483,12 @@ footer .social-link {
         width: 768px;
     }
 
+    .promo-card img {
+        width: 300px;
+    }
+
     .order-container-guess {
-        top: 2400px;
+        top: 2700px;
         width: 768px;
     }
 
@@ -499,7 +503,7 @@ footer .social-link {
     }
 
     .quote-container {
-        top: 2900px;
+        top: 3200px;
     }
     
     .quote-container p {
@@ -513,12 +517,12 @@ footer .social-link {
     }
 
     .bite2 {
-        top: 3300px;
+        top: 3600px;
         width: 768px;
     }
     
     footer {
-        top: 3500px;    
+        top: 3800px;    
         width: 768px;
     }
 }
@@ -542,7 +546,12 @@ footer .social-link {
         width: 992px;
     }
 
+    .promo-card img {
+        width: 400px;
+    }
+
     .order-container-guess {
+        top: 2850px;
         width: 992px;
     }
 
@@ -556,20 +565,26 @@ footer .social-link {
         margin-left: 340px;
     }
     
+    .quote-container {
+        top: 3350px;
+        margin-left: 140px;
+    }
+
     .quote-container p {
         margin-right: 13rem;
     }
     
     .button.login {  
         position: absolute;
-        margin-left: 400px;
     }
 
     .bite2 {
+        top: 3800px;
         width: 992px;
     }
     
     footer {    
+        top: 4000px;
         width: 992px;
     }
 }
