@@ -462,6 +462,7 @@ nav ul li:nth-child(4) a {
 
 .promo-card a {
     text-decoration: none;
+    color: var(--secondary-color);
 }
 
 .bite2 {
