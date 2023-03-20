@@ -288,13 +288,12 @@ nav ul li:nth-child(4) a {
     grid-template-rows: repeat(3, 1fr);
 
     position: absolute;
-    top: 1200px;
+    top: 1210px;
     width: 480px;
 }
 
 .team div:nth-child(1) {
     grid-column: 1 / 3;
-    transform: translate(0, -10%);
 }
 
 .employee-card {
@@ -432,22 +431,22 @@ footer .social-link {
     }
 
     .team {
-        top: 1450px;
+        top: 1360px;
         width: 768px;
     }
 
     .contact-container {
-        top: 2700px;
+        top: 2500px;
         width: 768px;
     }
     
     .bite2 {
-        top: 3400px;
+        top: 3200px;
         width: 768px;
     }
     
     footer {
-        top: 3600px;    
+        top: 3400px;    
         width: 768px;
     }
 }
@@ -475,22 +474,22 @@ footer .social-link {
     }
 
     .team {
-        top: 1650px;
+        top: 1550px;
         width: 992px;
     }
     
     .contact-container {
-        top: 2750px;
+        top: 2650px;
         width: 992px;
     }
 
     .bite2 {
-        top: 3400px;
+        top: 3300px;
         width: 992px;
     }
     
     footer {
-        top: 3600px;    
+        top: 3500px;    
         width: 992px;
     }
 }
